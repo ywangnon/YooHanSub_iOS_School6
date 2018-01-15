@@ -25,6 +25,7 @@ class ViewController: UIViewController {
     /// 코드가 시작하는 곳
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(Int.max)
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -184,6 +185,6 @@ class ViewController: UIViewController {
         secondNumDisplay.textColor = color
         resultDisplay.textColor = color
     }
-
+    
 }
 
