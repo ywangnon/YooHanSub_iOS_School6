@@ -158,6 +158,22 @@ func q4(num: Int)
     }
 }
 
+func q5(num: Int) -> Bool
+{
+    if num != 1 {
+        for i in 2..<num {
+            if num%i == 0 {
+                return false
+            }
+        }
+    return true
+    }
+    return false
+}
+
+q5(num: 1)
+q5(num: 5)
+
 func q6(num: Int) -> Int
 {
     var num1: Int = 0
@@ -174,4 +190,17 @@ func q6(num: Int) -> Int
 }
 //재귀함수로
 
+func q6_2(num: Int) -> Int
+{
+    if(num == 0 || num == 1)
+    {
+        return num
+    } else
+    {
+        return q6_2(num: num-1) + q6_2(num: num-2)
+    }
+}
+
 q6(num: 1)
+
+q6_2(num: 3)
