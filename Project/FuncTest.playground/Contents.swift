@@ -1,6 +1,8 @@
 //: Playground - noun: a place where people can play
 
 //<기초>
+import UIKit
+
 func printName(name: String)
 {
     print("\(name)")
@@ -20,7 +22,7 @@ print(printIntro(name: "유한섭", age: 31 ))
 
 func divideNumTwo(num: Int) -> Double
 {
-    return Double(num)/Double(2)
+    return Double(num)/2 //Double(2)
 }
 
 func squre(of num: Int) -> Int
@@ -72,10 +74,10 @@ func testAver(sub: Int...) -> Double
         total += sub
     }
     
-    return Double(total/sub.count)
+    return Double(total)/Double(sub.count)
 }
 
-print(testAver(sub: 90,80,70))
+print(testAver(sub: 90,80,70,60,50))
 
 //<캐스팅>
 func changeDouble(num: Int) -> Double
@@ -92,15 +94,21 @@ print(unionNum(num1: 3, num2: 4))
 
 func roundNum(num: Double) -> Int
 {
-    let ronum = num*10
     
-    if(Int(ronum)%10>5)
-    {
-        return Int((ronum+10)/10)
-    } else
-    {
-        return Int(ronum/10)
-    }
+//    return Int(round(num))
+//    let ronum = num*10
+//
+//    if(Int(ronum)%10>5)
+//    {
+//        return Int((ronum+10)/10)
+//    } else
+//    {
+//        return Int(ronum/10)
+//    }
+    return Int(num+0.5)
 }
 
-print(roundNum(num: 10.4))
+//가장 마지막 자리에서 반올림하기
+
+
+roundNum(num: 10.9)
