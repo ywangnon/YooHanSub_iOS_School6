@@ -84,7 +84,7 @@ class ViewController: UIViewController {
             changeColor(by: operStr)
         }
     }
-    
+    Array()
     /// 데이터 리셋
     @IBAction func clickDidCancel(_ sender: UIButton) {
         print("did Cancel")
