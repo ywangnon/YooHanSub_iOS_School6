@@ -64,7 +64,7 @@ class ViewController: UIViewController {
         
         ***************/
         
-        for i in 0...2
+        for i in 0..<answer.count
         {
             if answer[i] == correctAnswer[i]
             {
@@ -87,6 +87,25 @@ class ViewController: UIViewController {
                 outCount += 1
             }
         }
+        
+//        for index in 0..<answer.count
+//        {
+//            var answerValue = answer[index]
+//
+//            if correctAnswer.contains(answerValue)
+//            {
+//                if answerValue == correctAnswer[index]
+//                {
+//                    strikeCount += 1
+//                }else
+//                {
+//                    ballCount += 1
+//                }
+//            }else
+//            {
+//                outCount += 1
+//            }
+//        }
         
         //make result Str
         var resultStr:String = ""
@@ -119,6 +138,7 @@ class ViewController: UIViewController {
         **********/
         
         selectedNumberList.removeAll()
+        //selectedNumberList = []
         
         //화면 리셋
         guard let  selectNumLBList = selectNumLBList else {return}

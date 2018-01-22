@@ -37,6 +37,7 @@
 - 순서 없음
 - 중복 없음
 - 무조건 다 봐야함(for-in 사용)
+- Set.함수(배열) = SetType
 - Set을 정렬(sorted)하면 Array
 
 ### 리터럴
