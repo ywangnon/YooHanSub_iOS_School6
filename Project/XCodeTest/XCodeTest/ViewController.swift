@@ -21,7 +21,6 @@ class ViewController: UIViewController {
         
         print("세번째 프린트!")
         
-        
         print("네번째 프린트!")
         
         lb.backgroundColor = .red
