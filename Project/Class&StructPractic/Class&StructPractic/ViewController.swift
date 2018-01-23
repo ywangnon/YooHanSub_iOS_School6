@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var maxLB: UILabel!
     
     override func viewDidLoad() {
+        
+        
         super.viewDidLoad()
         
         let red: Person = Person(name: "알파", gender: "남성", major: "로봇공학")
