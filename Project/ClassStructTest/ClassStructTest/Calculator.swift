@@ -31,7 +31,11 @@ class Calculator
     {
         var name: String = ""
         var score: Int = 0
+        
+        
+        
         for person in student {
+            
             for subject in person.subjects
             {
                 if subject.name == "싸움" && subject.score > score

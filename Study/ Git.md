@@ -59,6 +59,9 @@ doc/**/*.pdf
 # *_sample.* 파일이름의 마지막에 _sample 이 들어가는 모든 파일 제외
 *_sample.*
 ```
+### 주의
+- 문법, 문자간 띄어쓰기  
+- Save후 적용
 
 ## 참고 사이트
 ###[간편 안내서](http://rogerdudler.github.io/git-guide/index.ko.html)  
