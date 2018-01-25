@@ -16,6 +16,8 @@
 		01042FEF2016CA910015891C /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01042FEE2016CA910015891C /* Subject.swift */; };
 		01042FF12016CAAB0015891C /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01042FF02016CAAB0015891C /* Calculator.swift */; };
 		017601052019835300194564 /* Humanoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017601042019835300194564 /* Humanoid.swift */; };
+		01F84AF52019859400D182A6 /* Robot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F84AF42019859400D182A6 /* Robot.swift */; };
+		01F84AF72019A9D700D182A6 /* HumanoidCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F84AF62019A9D700D182A6 /* HumanoidCalculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		01042FEE2016CA910015891C /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
 		01042FF02016CAAB0015891C /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 		017601042019835300194564 /* Humanoid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Humanoid.swift; sourceTree = "<group>"; };
+		01F84AF42019859400D182A6 /* Robot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Robot.swift; sourceTree = "<group>"; };
+		01F84AF62019A9D700D182A6 /* HumanoidCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanoidCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 				01042FEE2016CA910015891C /* Subject.swift */,
 				01042FF02016CAAB0015891C /* Calculator.swift */,
 				01042FEC2016CA850015891C /* Person.swift */,
+				01F84AF42019859400D182A6 /* Robot.swift */,
+				01F84AF62019A9D700D182A6 /* HumanoidCalculator.swift */,
 				017601042019835300194564 /* Humanoid.swift */,
 				01042FDE2016CA710015891C /* Main.storyboard */,
 				01042FE12016CA710015891C /* Assets.xcassets */,
@@ -150,6 +156,8 @@
 			files = (
 				017601052019835300194564 /* Humanoid.swift in Sources */,
 				01042FEF2016CA910015891C /* Subject.swift in Sources */,
+				01F84AF72019A9D700D182A6 /* HumanoidCalculator.swift in Sources */,
+				01F84AF52019859400D182A6 /* Robot.swift in Sources */,
 				01042FED2016CA850015891C /* Person.swift in Sources */,
 				01042FDD2016CA710015891C /* ViewController.swift in Sources */,
 				01042FF12016CAAB0015891C /* Calculator.swift in Sources */,
