@@ -1,3 +1,14 @@
+# BaseBall Game
+- 배운 Swift 기본 문법들을 활용하여 야구 게임을 완성시켰다.
+
+## 실습 내용
+[iPhone 8 plus Screen](./Simulator_Screen_Shot.png)
+
+> 동작된 화면
+
+## ViewController.swift
+
+```
 //
 //  ViewController.swift
 //  BaseballGame
@@ -306,7 +317,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         selectNumLBList = [selecNum1LB,selecNum2LB,selecNum3LB]
     }
-    
-    
 }
+```
 
