@@ -1,3 +1,11 @@
+# Swift 계산기
+
+## 실습 내용
+![계산기 이미지](./Simulator_Screen_Shot.png "계산기 화면")
+
+## ViewController.swift
+
+```
 //
 //  ViewController.swift
 //  CalculatorSwift
@@ -188,3 +196,4 @@ class ViewController: UIViewController {
     
 }
 
+```

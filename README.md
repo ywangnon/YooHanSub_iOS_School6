@@ -3,7 +3,6 @@
 ## about me
 
 ## 이론 정리
-
 - [객체지향](./Study/객체지향.md)
 - [Git](./Study/Git.md)
 - [운영체제](./Study/운영체제.md)
@@ -19,5 +18,5 @@
 
 ## 프로젝트
 - [야구 게임](./Project/BaseballGame)
-
+- [계산기](./Project/CalculatorSwift)
 
