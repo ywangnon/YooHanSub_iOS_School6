@@ -6,26 +6,28 @@ import UIKit
 //
 //예를 들어 2x2 행렬인 A = ((1, 2), (2, 3)), B = ((3, 4), (5, 6)) 가 주어지면, 같은 2x2 행렬인 ((4, 6), (7, 9))를 반환하면 됩니다.(어떠한 행렬에도 대응하는 함수를 완성해주세요.)
 
-//func sumMatrix(list1: [[Int]],list2: [[Int]]) -> [[Int]]{
-//    var answerList: [[Int]] = [[]]
-//
-//    for i in 0..<list1.count
-//    {
-//        for j in 0..<list1[i].count
-//        {
-//            answerList[i][j] = list1[i][j] + li2
-//        }
-//    }
-//
-//    return answerList
-//}
+func sumMatrix(list1: [[Int]],list2: [[Int]]) -> [[Int]]{
+    var answerList: [[Int]] = [[]]
+
+    guard list1.count == list2.count, list1[0].count == list2[0].count else {
+        return []
+    }
+    
+    for i in 0..<list1.count
+    {
+        var tempList:[Int] = []
+        for j in 0..<list1[i].count
+        {
+            tempList.append(list1[i][j]+list2[i][j])
+        }
+        answerList.append(tempList)
+    }
+    answerList.remove(at: 0)
+    return answerList
+}
 
 // 아래는 테스트로 출력해 보기 위한 코드입니다.
-//print(sumMatrix(list1: [[1,2], [2,3]], list2: [[3,4],[5,6]]))
-//print([[1,2], [2,3]], [[3,4],[5,6]])
+print(sumMatrix(list1: [[1,2], [2,3]], list2: [[3,4],[5,6]]))
 
-
-let array: [[Int]] = [[1,2], [2,3]]//, [[3,4],[5,6]]
-print(array[0][0])
 
 
