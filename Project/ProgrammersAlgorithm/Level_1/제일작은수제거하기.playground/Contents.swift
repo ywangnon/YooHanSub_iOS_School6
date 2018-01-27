@@ -10,10 +10,12 @@ func rm_small(mylist:[Int]) -> [Int]
 {
     var resultList:[Int] = mylist
     
+    //인자가 1개이하면 []리턴
     if mylist.count <= 1 {
         resultList = []
     } else
     {
+        //인덱스 값끼리 비교하여 최소값 구함
         var minIndex = 0
         for num in 0..<mylist.count
         {
@@ -21,6 +23,7 @@ func rm_small(mylist:[Int]) -> [Int]
                 minIndex = num
             }
         }
+        //최소값 인덱스 삭제
         resultList.remove(at: minIndex )
     }
     
