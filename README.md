@@ -26,7 +26,7 @@
 - [프로퍼티](./Study/Swift이론/프로퍼티.md)
 - [참조 예제](/Users/hansubyoo/YooHanSub_iOS_School6/Study/Swift이론/프로퍼티.md)
 - [예제2](./Study/Swift이론/프로퍼티.md)
-
+- [예제3](./Study/Yagom's_Swift/Closure_Advanced.md)
 
 ### [UI]
 
