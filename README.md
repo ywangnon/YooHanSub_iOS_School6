@@ -22,6 +22,8 @@
 - [SwiftDataType](./Study/Swift이론/SwiftDataType.md)
 - [Class&Struct2](./Study/Swift이론/Class&Struct2.md)
 - [옵셔널](./Study/Swift이론/옵셔널.md)
+- [접근제어](./Study/Swift이론/접근제어.md)
+- [프로퍼티](./Study/Swift이론/프로퍼티.md)
 
 ### [UI]
 
