@@ -48,4 +48,5 @@ Forwarad delete | ⌦
 강제 종료|`command` + `option` + `esc`
 전체 화면 캡쳐|`command` + `shift` + `3`
 지정 화면 캡쳐|`command` + `shift` + `4`
+파일 이동(잘라내어 붙이기)|`command` + `option` + `v`
 

@@ -24,6 +24,9 @@
 - [옵셔널](./Study/Swift이론/옵셔널.md)
 - [접근제어](./Study/Swift이론/접근제어.md)
 - [프로퍼티](./Study/Swift이론/프로퍼티.md)
+- [참조 예제](/Users/hansubyoo/YooHanSub_iOS_School6/Study/Swift이론/프로퍼티.md)
+- [예제2](./Study/Swift이론/프로퍼티.md)
+
 
 ### [UI]
 
