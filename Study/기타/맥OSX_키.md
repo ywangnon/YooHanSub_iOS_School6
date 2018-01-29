@@ -49,4 +49,5 @@ Forwarad delete | ⌦
 전체 화면 캡쳐|`command` + `shift` + `3`
 지정 화면 캡쳐|`command` + `shift` + `4`
 파일 이동(잘라내어 붙이기)|`command` + `option` + `v`
+지정 프로그램 캡쳐|`command`+`shift`+`4` -> `space`
 
