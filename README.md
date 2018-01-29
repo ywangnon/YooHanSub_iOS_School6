@@ -9,24 +9,21 @@
 
 ## 1.  Swift 이론
 ### [기본 개념]
-- [객체지향](./Study/Swift이론/객체지향.md)
-- [운영체제](./Study/Swift이론/운영체제.md)
-- [Swift개요](./Study/Swift이론/Swift개요.md)
+- [객체지향](./Study/SwiftTheory/객체지향.md)
+- [운영체제](./Study/SwiftTheory/운영체제.md)
+- [Swift개요](./Study/SwiftTheory/Swift개요.md)
 
 ### [기본 문법]
-- [변수&함수](./Study/Swift이론/변수&함수.md)
-- [조건문](./Study/조건문.md)
-- [반복문](./Study/반복문.md)
-- [CollectionType](./Study/Swift이론/CollectionType.md)
-- [Class&Struct](./Study/Swift이론/Class&Struct.md)
-- [SwiftDataType](./Study/Swift이론/SwiftDataType.md)
-- [Class&Struct2](./Study/Swift이론/Class&Struct2.md)
-- [옵셔널](./Study/Swift이론/옵셔널.md)
-- [접근제어](./Study/Swift이론/접근제어.md)
-- [프로퍼티](./Study/Swift이론/프로퍼티.md)
-- [참조 예제](/Users/hansubyoo/YooHanSub_iOS_School6/Study/Swift이론/프로퍼티.md)
-- [예제2](./Study/Swift이론/프로퍼티.md)
-- [예제3](./Study/Yagom's_Swift/Closure_Advanced.md)
+- [변수&함수](./Study/SwiftTheory/변수&함수.md)
+- [조건문](./Study/SwiftTheory/조건문.md)
+- [반복문](./Study/SwiftTheory/반복문.md)
+- [CollectionType](./Study/SwiftTheory/CollectionType.md)
+- [Class&Struct](./Study/SwiftTheory/Class&Struct.md)
+- [SwiftDataType](./Study/SwiftTheory/SwiftDataType.md)
+- [Class&Struct2](./Study/SwiftTheory/Class&Struct2.md)
+- [옵셔널](./Study/SwiftTheory/옵셔널.md)
+- [접근제어](./Study/SwiftTheory/접근제어.md)
+- [프로퍼티](./Study/SwiftTheory/프로퍼티.md)
 
 ### [UI]
 
