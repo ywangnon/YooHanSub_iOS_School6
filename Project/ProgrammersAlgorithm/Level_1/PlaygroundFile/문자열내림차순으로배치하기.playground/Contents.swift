@@ -8,6 +8,13 @@ func reverseStr(str: String) -> String
     var strTemp: String = str
     var resultStr: String = ""
     var max: Character
+    
+    for num in 0..<str.count
+    {
+        resultStr += String(strTemp.max()!)
+        let index: String.Index = strTemp.index(of: strTemp.max()!)!
+        strTemp.remove(at: index)
+    }
 
 //    let m = strTemp.index(strTemp.startIndex, offsetBy: 5)
 //    strTemp.remove(at: m)
@@ -24,20 +31,20 @@ func reverseStr(str: String) -> String
 //        strTemp.remove(at: strTemp.index(str.startIndex, offsetBy: max))
 //    }
 
-    for ch1 in strTemp
-    {
-        max = ch1
-        for ch2 in strTemp
-        {
-            if ch2 > max && !(resultStr.contains(ch2))
-            {
-                max = ch2
-            }
-        }
-        max
-        resultStr += String(max)
-    }
-    resultStr.contains("h")
+//    for ch1 in strTemp
+//    {
+//        max = ch1
+//        for ch2 in strTemp
+//        {
+//            if ch2 > max && !(resultStr.contains(ch2))
+//            {
+//                max = ch2
+//            }
+//        }
+//        max
+//        resultStr += String(max)
+//    }
+//    resultStr.contains("h")
     return resultStr
 }
 
