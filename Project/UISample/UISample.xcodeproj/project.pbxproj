@@ -14,6 +14,8 @@
 		010490892022AA29008296B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 010490872022AA29008296B3 /* LaunchScreen.storyboard */; };
 		010490912022B59D008296B3 /* 소녀시대.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 010490902022B59D008296B3 /* 소녀시대.jpg */; };
 		010490942022C3B4008296B3 /* GirlsGeneration.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 010490922022C2DD008296B3 /* GirlsGeneration.jpg */; };
+		010490982022E16A008296B3 /* button.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 010490972022E169008296B3 /* button.jpg */; };
+		0104909A2022FA42008296B3 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010490992022FA42008296B3 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		0104908A2022AA29008296B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		010490902022B59D008296B3 /* 소녀시대.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "소녀시대.jpg"; sourceTree = "<group>"; };
 		010490922022C2DD008296B3 /* GirlsGeneration.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GirlsGeneration.jpg; sourceTree = "<group>"; };
+		010490972022E169008296B3 /* button.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = button.jpg; sourceTree = "<group>"; };
+		010490992022FA42008296B3 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +64,24 @@
 			children = (
 				0104907E2022AA29008296B3 /* AppDelegate.swift */,
 				010490802022AA29008296B3 /* ViewController.swift */,
+				0104909B202302B3008296B3 /* New Group */,
+				010490992022FA42008296B3 /* ProfileView.swift */,
 				010490822022AA29008296B3 /* Main.storyboard */,
 				010490902022B59D008296B3 /* 소녀시대.jpg */,
 				010490922022C2DD008296B3 /* GirlsGeneration.jpg */,
+				010490972022E169008296B3 /* button.jpg */,
 				010490852022AA29008296B3 /* Assets.xcassets */,
 				010490872022AA29008296B3 /* LaunchScreen.storyboard */,
 				0104908A2022AA29008296B3 /* Info.plist */,
 			);
 			path = UISample;
+			sourceTree = "<group>";
+		};
+		0104909B202302B3008296B3 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +146,7 @@
 				010490892022AA29008296B3 /* LaunchScreen.storyboard in Resources */,
 				010490912022B59D008296B3 /* 소녀시대.jpg in Resources */,
 				010490862022AA29008296B3 /* Assets.xcassets in Resources */,
+				010490982022E16A008296B3 /* button.jpg in Resources */,
 				010490842022AA29008296B3 /* Main.storyboard in Resources */,
 				010490942022C3B4008296B3 /* GirlsGeneration.jpg in Resources */,
 			);
@@ -145,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				010490812022AA29008296B3 /* ViewController.swift in Sources */,
+				0104909A2022FA42008296B3 /* ProfileView.swift in Sources */,
 				0104907F2022AA29008296B3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
