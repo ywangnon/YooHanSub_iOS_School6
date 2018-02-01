@@ -58,9 +58,6 @@ class ViewController: UIViewController {
         //centerLB.backgroundColor = UIColor.yellow
         centerLB.textAlignment = NSTextAlignment.center
         view.addSubview(centerLB)
-        
-        
-        
     }
 
     override func didReceiveMemoryWarning() {
