@@ -64,6 +64,7 @@
 			children = (
 				0104907E2022AA29008296B3 /* AppDelegate.swift */,
 				010490802022AA29008296B3 /* ViewController.swift */,
+				015392452023EEA20069498D /* New Group1 */,
 				0104909B202302B3008296B3 /* New Group */,
 				010490992022FA42008296B3 /* ProfileView.swift */,
 				010490822022AA29008296B3 /* Main.storyboard */,
@@ -82,6 +83,13 @@
 			children = (
 			);
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		015392452023EEA20069498D /* New Group1 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group1";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

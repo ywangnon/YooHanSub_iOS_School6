@@ -3,9 +3,9 @@
 ## about me
 
 - iOS Developer
-- 연락처
- - E-mail: <ywangnon123@gmail.com>
- - Tel: 010-7352-0800
+- Contact Me
+ * E-mail: <ywangnon123@gmail.com>
+ * Tel: 010-7352-0800
 
 ## 1.  Swift 이론
 ### [기본 개념]
@@ -42,7 +42,7 @@
 - **Mac Terminal**
 
 > Terminal 개요<br>
-> Terminal 간단한 명령어
+> Terminal 간단한 명령어    
 [참조](https://support.apple.com/ko-kr/guide/terminal/trmlshtcts/mac)
 
 - **Git**
