@@ -5,8 +5,8 @@ mvc패턴으로 생성
 2. UI Applicationd에서 EventLoop 받음
 3. ios 에서 아는건 uiapplication
 4. uiapplication에서 관리
-					  - delegate
-UI Application - app delegate - Storyboard - initial 설정한 View - ViewdidLoad
+				           - delegate
+UI Application - main() - Storyboard - initial 설정한 View - ViewdidLoad
 
 eventqueue
 순서를 보장하기 위해 큐 선택
