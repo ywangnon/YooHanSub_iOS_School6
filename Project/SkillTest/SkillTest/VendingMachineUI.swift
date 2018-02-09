@@ -13,6 +13,9 @@ class VendingMachineUI: UIView, DrinkViewDelegate, InputViewDelegate {
     var drink: DrinkView?
     var display: DisplayView?
     var input: InputView?
+
+    let margin: CGFloat = 30
+    var offSetY: CGFloat = 30
     
     func changeInputText(_ sender: UIButton) {
         
@@ -25,16 +28,12 @@ class VendingMachineUI: UIView, DrinkViewDelegate, InputViewDelegate {
             DisplayView.sum -= DisplayView.sum
             display?.BalanceDisplay?.text = "잔액 : "+String(DisplayView.sum)
         }
-        
     }
     
     func changeDrinkText(_ sender: UIButton) {
         display?.resultDisplay?.text = DrinkView.drinkImgList[sender.tag]+"가 나왔습니다."
         display?.BalanceDisplay?.text = "잔액 : "+String(DisplayView.sum)
     }
-    
-    let margin: CGFloat = 30
-    var offSetY: CGFloat = 30
     
     override init(frame: CGRect) {
         super.init(frame: frame)
