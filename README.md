@@ -27,11 +27,12 @@
 
 ### [UI]
 - [UI명령어]
-
+- [delegate]
 
 ## 2. 프로젝트
 - [야구 게임](./Project/BaseballGame)
 - [계산기](./Project/CalculatorSwift)
+- [자판기]
 
 ## 3. Etc
 - **markdown 문법**
@@ -42,7 +43,7 @@
 - **Mac Terminal**
 
 > Terminal 개요<br>
-> Terminal 간단한 명령어    
+> Terminal 간단한 명령어
 [참조](https://support.apple.com/ko-kr/guide/terminal/trmlshtcts/mac)
 
 - **Git**
@@ -58,7 +59,7 @@
 - **맥 OSX**
 
 > OSX 개요    
-> OSX 단축키  
+> OSX 단축키      
 [참조](https://support.apple.com/ko-kr/HT201236)
 
 ## 4. Algorithm
