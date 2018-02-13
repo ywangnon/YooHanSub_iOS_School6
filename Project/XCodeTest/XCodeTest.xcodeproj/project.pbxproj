@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		010BAB3B20312856002F4FAB /* Frame_Bounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010BAB3A20312856002F4FAB /* Frame_Bounds.swift */; };
 		01C520202005B9570002965B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C5201F2005B9570002965B /* AppDelegate.swift */; };
 		01C520222005B9570002965B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C520212005B9570002965B /* ViewController.swift */; };
 		01C520252005B9570002965B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01C520232005B9570002965B /* Main.storyboard */; };
@@ -17,7 +16,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		010BAB3A20312856002F4FAB /* Frame_Bounds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Frame_Bounds.swift; path = ../../Frame_Bounds.swift; sourceTree = "<group>"; };
 		01C5201C2005B9570002965B /* XCodeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCodeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01C5201F2005B9570002965B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01C520212005B9570002965B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,7 +58,6 @@
 			children = (
 				01C5201F2005B9570002965B /* AppDelegate.swift */,
 				01C520212005B9570002965B /* ViewController.swift */,
-				010BAB3A20312856002F4FAB /* Frame_Bounds.swift */,
 				01C520232005B9570002965B /* Main.storyboard */,
 				01C520262005B9570002965B /* Assets.xcassets */,
 				01C520282005B9570002965B /* LaunchScreen.storyboard */,
@@ -144,7 +141,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				01C520222005B9570002965B /* ViewController.swift in Sources */,
-				010BAB3B20312856002F4FAB /* Frame_Bounds.swift in Sources */,
 				01C520202005B9570002965B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
