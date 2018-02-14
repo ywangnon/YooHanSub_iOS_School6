@@ -23,7 +23,7 @@
 ### *Github는 Git 서비스 중 하나일 뿐이다.
 
 ## Git 명령어
-![Git 명령어](./img/Git Command.png)
+![Git 명령어](./img/GitCommand.png)
 
 ## Git ignore
 - 원하지 않는 파일을 Git에서 제외시킬수 있는 설정 File

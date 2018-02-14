@@ -51,3 +51,4 @@ Forwarad delete | ⌦
 파일 이동(잘라내어 붙이기)|`command` + `option` + `v`
 지정 프로그램 캡쳐|`command`+`shift`+`4` -> `space`
 
+✽ [**참조 사이트**](https://support.apple.com/ko-kr/HT201236)

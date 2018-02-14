@@ -35,32 +35,31 @@
 - [자판기]
 
 ## 3. Etc
-- **markdown 문법**
+### **markdown 문법**
 
 > 마크다운 개요    
-> 마크다운 문법
+> [마크다운 문법](./Study/Etc/마크다운_문법.md)
 
-- **Mac Terminal**
+### **Mac Terminal**
 
-> Terminal 개요<br>
-> Terminal 간단한 명령어
-[참조](https://support.apple.com/ko-kr/guide/terminal/trmlshtcts/mac)
+> [Terminal 개요](./Study/Etc/터미널.md)<br>
+> Terminal 명령어     
 
-- **Git**
+### **Git**
 
-> Git 개요   
-> Git 명령어(./Study/기타/Git.md)
+> [Git 개요](./Study/Etc/Git.md)   
+> Git 명령어
 
-- **XCode 단축키**
+### **XCode 단축키**
 
-> XCode 개요   
-> XCode 단축키
+> [XCode 개요](./Study/Etc/XCode개요.md)<br>
+> [XCode 단축키](./Study/Etc/XCode.md)
 
 - **맥 OSX**
 
 > OSX 개요    
-> OSX 단축키      
-[참조](https://support.apple.com/ko-kr/HT201236)
+> [OSX 단축키](./Study/Etc/맥OSX_키.md)      
+
 
 ## 4. Algorithm
 
