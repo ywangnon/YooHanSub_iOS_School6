@@ -63,6 +63,6 @@
 
 ## 4. Algorithm
 
-### 1. [Programmers Algorithm](./Project/ProgrammersAlgorithm)
+### 1. [Programmers Algorithm](./Project/Algorithm/ProgrammersAlgorithm)
 
 ### 2. []
