@@ -13,8 +13,11 @@
 		0101FDC42037FFFC00D69365 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0101FDC32037FFFC00D69365 /* Assets.xcassets */; };
 		0101FDC72037FFFC00D69365 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0101FDC52037FFFC00D69365 /* LaunchScreen.storyboard */; };
 		0101FDD12038005300D69365 /* MemberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0101FDD02038005300D69365 /* MemberView.swift */; };
-		0101FDD32038009500D69365 /* MemberController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0101FDD22038009500D69365 /* MemberController.swift */; };
 		0101FDD52038017000D69365 /* MemberFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0101FDD42038017000D69365 /* MemberFile.swift */; };
+		010504CB2039259200337F72 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010504CA2039259200337F72 /* SignupView.swift */; };
+		010504D0203961DE00337F72 /* MemberController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010504CE203961DE00337F72 /* MemberController.swift */; };
+		010504D1203961DE00337F72 /* MemberController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 010504CF203961DE00337F72 /* MemberController.xib */; };
+		010504D3203969B200337F72 /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010504D2203969B200337F72 /* SignupController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +29,11 @@
 		0101FDC62037FFFC00D69365 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0101FDC82037FFFC00D69365 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0101FDD02038005300D69365 /* MemberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberView.swift; sourceTree = "<group>"; };
-		0101FDD22038009500D69365 /* MemberController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberController.swift; sourceTree = "<group>"; };
 		0101FDD42038017000D69365 /* MemberFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberFile.swift; sourceTree = "<group>"; };
+		010504CA2039259200337F72 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		010504CE203961DE00337F72 /* MemberController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberController.swift; sourceTree = "<group>"; };
+		010504CF203961DE00337F72 /* MemberController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemberController.xib; sourceTree = "<group>"; };
+		010504D2203969B200337F72 /* SignupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +68,12 @@
 			children = (
 				0101FDBC2037FFFC00D69365 /* AppDelegate.swift */,
 				0101FDBE2037FFFC00D69365 /* ViewController.swift */,
+				010504CA2039259200337F72 /* SignupView.swift */,
+				010504D2203969B200337F72 /* SignupController.swift */,
 				0101FDD02038005300D69365 /* MemberView.swift */,
 				0101FDD42038017000D69365 /* MemberFile.swift */,
-				0101FDD22038009500D69365 /* MemberController.swift */,
+				010504CE203961DE00337F72 /* MemberController.swift */,
+				010504CF203961DE00337F72 /* MemberController.xib */,
 				0101FDC02037FFFC00D69365 /* Main.storyboard */,
 				0101FDC32037FFFC00D69365 /* Assets.xcassets */,
 				0101FDC52037FFFC00D69365 /* LaunchScreen.storyboard */,
@@ -133,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0101FDC72037FFFC00D69365 /* LaunchScreen.storyboard in Resources */,
+				010504D1203961DE00337F72 /* MemberController.xib in Resources */,
 				0101FDC42037FFFC00D69365 /* Assets.xcassets in Resources */,
 				0101FDC22037FFFC00D69365 /* Main.storyboard in Resources */,
 			);
@@ -145,9 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				010504CB2039259200337F72 /* SignupView.swift in Sources */,
 				0101FDD12038005300D69365 /* MemberView.swift in Sources */,
-				0101FDD32038009500D69365 /* MemberController.swift in Sources */,
+				010504D3203969B200337F72 /* SignupController.swift in Sources */,
 				0101FDBF2037FFFC00D69365 /* ViewController.swift in Sources */,
+				010504D0203961DE00337F72 /* MemberController.swift in Sources */,
 				0101FDD52038017000D69365 /* MemberFile.swift in Sources */,
 				0101FDBD2037FFFC00D69365 /* AppDelegate.swift in Sources */,
 			);

@@ -1,28 +1,28 @@
 //
-//  MemberView.swift
+//  SignupView.swift
 //  BlackJack
 //
-//  Created by Hansub Yoo on 2018. 2. 17..
+//  Created by Hansub Yoo on 2018. 2. 18..
 //  Copyright © 2018년 hansub yoo. All rights reserved.
 //
 
 import UIKit
 
-/// 로그인 뷰
-class MemberView: UIView {
+class SignupView: UIView {
     
-    var delegate: MemberViewDelegate?
+    var delegate: SignupViewDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        createLoginView()
+        createSignup()
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func createLoginView() {
+    func createSignup() {
+        
         //뷰 전체 길이
         let viewWidth: CGFloat = self.bounds.width
         let viewheight: CGFloat = self.bounds.height
@@ -58,38 +58,46 @@ class MemberView: UIView {
         passTF.layer.cornerRadius = 10
         self.addSubview(passTF)
         
+        let passConfirmTF: UITextField = UITextField(frame: tlbSize)
+        passConfirmTF.frame.origin.x = viewWidth*0.25
+        passConfirmTF.frame.origin.y = viewheight*0.4
+        passConfirmTF.layer.borderColor = UIColor.black.cgColor
+        passConfirmTF.placeholder = "  passwordConfirm"
+        passConfirmTF.isSecureTextEntry = true
+        passConfirmTF.layer.borderWidth = 1
+        passConfirmTF.layer.cornerRadius = 10
+        self.addSubview(passConfirmTF)
+        
         //button
         let btnSize: CGRect = CGRect(x: 0, y: 0, width: viewWidth*0.3, height: viewheight*0.05)
         let signup: UIButton = UIButton(frame: btnSize)
         signup.frame.origin.x = viewWidth*0.1
-        signup.frame.origin.y = viewheight*0.45
+        signup.frame.origin.y = viewheight*0.5
         signup.layer.cornerRadius = 5
         signup.setTitle("회원 등록", for: .normal)
-        signup.addTarget(self, action: #selector(signAC(_:)), for: .touchUpInside)
         signup.backgroundColor = .green
         self.addSubview(signup)
         
-        let confirmSize: CGRect = CGRect(x: 0, y: 0, width: viewWidth*0.3, height: viewheight*0.05)
-        let confirm: UIButton = UIButton(frame: confirmSize)
-        confirm.frame.origin.x = viewWidth*0.6
-        confirm.frame.origin.y = viewheight*0.45
-        confirm.layer.cornerRadius = 5
-        confirm.setTitle("확인", for: .normal)
-        confirm.addTarget(self, action: #selector(confirmAC(_:)), for: .touchUpInside)
-        confirm.backgroundColor = .green
-        self.addSubview(confirm)
+        let calcelSize: CGRect = CGRect(x: 0, y: 0, width: viewWidth*0.3, height: viewheight*0.05)
+        let calcel: UIButton = UIButton(frame: calcelSize)
+        calcel.frame.origin.x = viewWidth*0.6
+        calcel.frame.origin.y = viewheight*0.5
+        calcel.layer.cornerRadius = 5
+        calcel.setTitle("취소", for: .normal)
+        calcel.backgroundColor = .green
+        self.addSubview(calcel)
     }
     
-    @objc func signAC(_ sender: UIButton) {
-        delegate?.signAction(sender)
+    func cancelAC(_ sender: UIButton) {
+        
     }
     
-    @objc func confirmAC(_ sender: UIButton) {
-        delegate?.confirmAction(sender)
+    func signupAC(_ sender: UIButton) {
+        
     }
 }
 
-protocol MemberViewDelegate {
-    func signAction(_ sender: UIButton)
-    func confirmAction(_ sender: UIButton)
+protocol SignupViewDelegate {
+    func signupAction(_ sender: UIButton)
+    func cancelAction(_ sender: UIButton)
 }
