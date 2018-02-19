@@ -9,9 +9,6 @@
 import UIKit
 
 class SignupController: UIViewController, SignupViewDelegate {
-    func signupAction(_ sender: UIButton) {
-        
-    }
     
     func cancelAction(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
@@ -23,6 +20,7 @@ class SignupController: UIViewController, SignupViewDelegate {
 
         let sign: SignupView = SignupView(frame: view.bounds)
         sign.backgroundColor = UIColor.green
+        sign.delegate = self
         view.addSubview(sign)
     }
 

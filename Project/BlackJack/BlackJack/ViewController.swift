@@ -22,9 +22,6 @@ class ViewController: UIViewController {
         let startBtn: UIButton = UIButton(frame: view.bounds)
         startBtn.addTarget(self, action: #selector(memberAction(_:)), for: .touchUpInside)
         view.addSubview(startBtn)
-        
-        print(view.bounds.width)
-        print(view.bounds.height)
     }
     
     @objc func memberAction(_ sender: UIButton) {

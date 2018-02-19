@@ -12,6 +12,8 @@ import UIKit
 class MemberView: UIView {
     
     var delegate: MemberViewDelegate?
+    var idTF: UITextField?
+    var passTF: UITextField?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -39,24 +41,24 @@ class MemberView: UIView {
         let tlbSize: CGRect = CGRect(x: 0, y: 0, width: viewWidth*0.5, height: viewheight*0.05)
         
         //id 입력란
-        let idTF: UITextField = UITextField(frame: tlbSize)
-        idTF.frame.origin.x = viewWidth*0.25
-        idTF.frame.origin.y = viewheight*0.2
-        idTF.layer.borderColor = UIColor.black.cgColor
-        idTF.placeholder = "  id"
-        idTF.layer.borderWidth = 1
-        idTF.layer.cornerRadius = 10
-        self.addSubview(idTF)
+        idTF = UITextField(frame: tlbSize)
+        idTF?.frame.origin.x = viewWidth*0.25
+        idTF?.frame.origin.y = viewheight*0.2
+        idTF?.layer.borderColor = UIColor.black.cgColor
+        idTF?.placeholder = "  id"
+        idTF?.layer.borderWidth = 1
+        idTF?.layer.cornerRadius = 10
+        self.addSubview(idTF!)
         
-        let passTF: UITextField = UITextField(frame: tlbSize)
-        passTF.frame.origin.x = viewWidth*0.25
-        passTF.frame.origin.y = viewheight*0.3
-        passTF.layer.borderColor = UIColor.black.cgColor
-        passTF.placeholder = "  password"
-        passTF.isSecureTextEntry = true
-        passTF.layer.borderWidth = 1
-        passTF.layer.cornerRadius = 10
-        self.addSubview(passTF)
+        passTF = UITextField(frame: tlbSize)
+        passTF?.frame.origin.x = viewWidth*0.25
+        passTF?.frame.origin.y = viewheight*0.3
+        passTF?.layer.borderColor = UIColor.black.cgColor
+        passTF?.placeholder = "  password"
+        passTF?.isSecureTextEntry = true
+        passTF?.layer.borderWidth = 1
+        passTF?.layer.cornerRadius = 10
+        self.addSubview(passTF!)
         
         //button
         let btnSize: CGRect = CGRect(x: 0, y: 0, width: viewWidth*0.3, height: viewheight*0.05)
@@ -85,7 +87,29 @@ class MemberView: UIView {
     }
     
     @objc func confirmAC(_ sender: UIButton) {
-        delegate?.confirmAction(sender)
+        
+        guard let id = idTF?.text, let pass = passTF?.text else{
+            return
+        }
+        
+        if let users = UserDefaults.standard.dictionary(forKey: key)
+        {
+            print("1pass")
+            for user in users
+            {
+                print("2pass")
+                if user.key == id
+                {
+                    print("3pass")
+                    if String(describing: user.value) == pass
+                    {
+                        delegate?.confirmAction(sender)
+                        print("통과")
+                    }
+                }
+            }
+        }
+        print("id나 비밀번호가 틀렸습니다.")
     }
 }
 
