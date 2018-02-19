@@ -119,44 +119,14 @@ class SignupView: UIView {
             {
                 UserIDs.updateValue(pass, forKey: id)
                 UserDefaults.standard.set(UserIDs, forKey: key)
-                print("1등록 완료")
             } else{
                 var UserIDs: [String : String] = [:]
                 UserIDs.updateValue(pass, forKey: id)
                 UserDefaults.standard.set(UserIDs, forKey: key)
-                print("2등록 완료")
             }
         }else
         {
             print("비밀번호가 다릅니다.")
-        }
-        
-        if UserDefaults.standard.dictionary(forKey: key) == nil{
-            print("아직도 nil")
-        }
-        
-        if UserDefaults.standard.object(forKey: key) != nil {
-            print("key have")
-        }else
-        {
-            print("no key")
-        }
-        print("=============")
-        if var list = UserDefaults.standard.dictionary(forKey: key)
-        {
-            for user in list
-            {
-                print(user.key)
-                print(user.value)
-            }
-        }
-        print("=============")
-        if var list = UserDefaults.standard.dictionary(forKey: key)
-        {
-            for a in list
-            {
-                print(a)
-            }
         }
     }
 }

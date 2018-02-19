@@ -31,5 +31,8 @@ class BlackjackView: UIView {
         let playerPart: UIView = UIView(frame: playerPartSize)
         playerPart.backgroundColor = UIColor.green
         self.addSubview(playerPart)
+        
+        
+        
     }
 }
