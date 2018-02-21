@@ -15,11 +15,9 @@
 		0101FDD12038005300D69365 /* MemberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0101FDD02038005300D69365 /* MemberView.swift */; };
 		010504CB2039259200337F72 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010504CA2039259200337F72 /* SignupView.swift */; };
 		010504D0203961DE00337F72 /* MemberController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010504CE203961DE00337F72 /* MemberController.swift */; };
-		010504D1203961DE00337F72 /* MemberController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 010504CF203961DE00337F72 /* MemberController.xib */; };
-		010504D3203969B200337F72 /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010504D2203969B200337F72 /* SignupController.swift */; };
 		010C5FB5203AA7D7002F7C62 /* BlackjackController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010C5FB3203AA7D7002F7C62 /* BlackjackController.swift */; };
-		010C5FB6203AA7D7002F7C62 /* BlackjackController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 010C5FB4203AA7D7002F7C62 /* BlackjackController.xib */; };
 		01B36DFA203AAD77009CEE65 /* BlackjackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B36DF9203AAD77009CEE65 /* BlackjackView.swift */; };
+		01F745DA203BA3BA00FC5A1D /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F745D8203BA3BA00FC5A1D /* SignupController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,11 +31,9 @@
 		0101FDD02038005300D69365 /* MemberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberView.swift; sourceTree = "<group>"; };
 		010504CA2039259200337F72 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		010504CE203961DE00337F72 /* MemberController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberController.swift; sourceTree = "<group>"; };
-		010504CF203961DE00337F72 /* MemberController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemberController.xib; sourceTree = "<group>"; };
-		010504D2203969B200337F72 /* SignupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
 		010C5FB3203AA7D7002F7C62 /* BlackjackController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackjackController.swift; sourceTree = "<group>"; };
-		010C5FB4203AA7D7002F7C62 /* BlackjackController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BlackjackController.xib; sourceTree = "<group>"; };
 		01B36DF9203AAD77009CEE65 /* BlackjackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackjackView.swift; sourceTree = "<group>"; };
+		01F745D8203BA3BA00FC5A1D /* SignupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				010504CA2039259200337F72 /* SignupView.swift */,
-				010504D2203969B200337F72 /* SignupController.swift */,
+				01F745D8203BA3BA00FC5A1D /* SignupController.swift */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -96,7 +92,6 @@
 			children = (
 				0101FDD02038005300D69365 /* MemberView.swift */,
 				010504CE203961DE00337F72 /* MemberController.swift */,
-				010504CF203961DE00337F72 /* MemberController.xib */,
 				010C5FB7203AA801002F7C62 /* Signup */,
 			);
 			path = Member;
@@ -107,7 +102,6 @@
 			children = (
 				01B36DF9203AAD77009CEE65 /* BlackjackView.swift */,
 				010C5FB3203AA7D7002F7C62 /* BlackjackController.swift */,
-				010C5FB4203AA7D7002F7C62 /* BlackjackController.xib */,
 			);
 			path = Blackjack;
 			sourceTree = "<group>";
@@ -172,9 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0101FDC72037FFFC00D69365 /* LaunchScreen.storyboard in Resources */,
-				010504D1203961DE00337F72 /* MemberController.xib in Resources */,
 				0101FDC42037FFFC00D69365 /* Assets.xcassets in Resources */,
-				010C5FB6203AA7D7002F7C62 /* BlackjackController.xib in Resources */,
 				0101FDC22037FFFC00D69365 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -189,7 +181,7 @@
 				010504CB2039259200337F72 /* SignupView.swift in Sources */,
 				0101FDD12038005300D69365 /* MemberView.swift in Sources */,
 				010C5FB5203AA7D7002F7C62 /* BlackjackController.swift in Sources */,
-				010504D3203969B200337F72 /* SignupController.swift in Sources */,
+				01F745DA203BA3BA00FC5A1D /* SignupController.swift in Sources */,
 				0101FDBF2037FFFC00D69365 /* ViewController.swift in Sources */,
 				010504D0203961DE00337F72 /* MemberController.swift in Sources */,
 				0101FDBD2037FFFC00D69365 /* AppDelegate.swift in Sources */,

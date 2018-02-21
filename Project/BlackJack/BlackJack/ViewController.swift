@@ -10,13 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let member: MemberController = MemberController(nibName: "MemberController", bundle: nil)
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let startImg: UIImageView = UIImageView(frame: view.bounds)
-        startImg.image = UIImage(named: "Blackjack")
+        startImg.image = UIImage(named: "BlackjackStart")
         view.addSubview(startImg)
         
         let startBtn: UIButton = UIButton(frame: view.bounds)
@@ -25,7 +25,9 @@ class ViewController: UIViewController {
     }
     
     @objc func memberAction(_ sender: UIButton) {
-        self.present(member, animated: true, completion: nil)
+        let member: MemberController = MemberController()
+        let navigationController = UINavigationController(rootViewController: member)
+        self.present(navigationController, animated: true, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {

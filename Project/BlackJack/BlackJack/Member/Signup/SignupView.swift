@@ -45,6 +45,7 @@ class SignupView: UIView {
         idTF = UITextField(frame: tlbSize)
         idTF?.frame.origin.x = viewWidth*0.25
         idTF?.frame.origin.y = viewheight*0.2
+        idTF?.backgroundColor = .white
         idTF?.layer.borderColor = UIColor.black.cgColor
         idTF?.placeholder = "  id"
         idTF?.layer.borderWidth = 1
@@ -54,6 +55,7 @@ class SignupView: UIView {
         passTF = UITextField(frame: tlbSize)
         passTF?.frame.origin.x = viewWidth*0.25
         passTF?.frame.origin.y = viewheight*0.3
+        passTF?.backgroundColor = .white
         passTF?.layer.borderColor = UIColor.black.cgColor
         passTF?.placeholder = "  password"
         passTF?.isSecureTextEntry = true
@@ -64,6 +66,7 @@ class SignupView: UIView {
         passConfirmTF = UITextField(frame: tlbSize)
         passConfirmTF?.frame.origin.x = viewWidth*0.25
         passConfirmTF?.frame.origin.y = viewheight*0.4
+        passConfirmTF?.backgroundColor = .white
         passConfirmTF?.layer.borderColor = UIColor.black.cgColor
         passConfirmTF?.placeholder = "  passwordConfirm"
         passConfirmTF?.isSecureTextEntry = true
@@ -100,6 +103,7 @@ class SignupView: UIView {
     @objc func signupAC(_ sender: UIButton) {
         
         guard let id = idTF?.text, let pass = passTF?.text, let confirm = passConfirmTF?.text else {
+            print("텍스트창에 입력하세요")
             return
         }
         
@@ -110,6 +114,7 @@ class SignupView: UIView {
                 if userid.key == id
                 {
                     print("이미 있는 id")
+                    return
                 }
             }
         }
@@ -124,6 +129,7 @@ class SignupView: UIView {
                 UserIDs.updateValue(pass, forKey: id)
                 UserDefaults.standard.set(UserIDs, forKey: key)
             }
+            self.cancelAC(sender)
         }else
         {
             print("비밀번호가 다릅니다.")

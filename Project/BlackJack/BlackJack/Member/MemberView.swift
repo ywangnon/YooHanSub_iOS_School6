@@ -44,6 +44,7 @@ class MemberView: UIView {
         idTF = UITextField(frame: tlbSize)
         idTF?.frame.origin.x = viewWidth*0.25
         idTF?.frame.origin.y = viewheight*0.2
+        idTF?.backgroundColor = .white
         idTF?.layer.borderColor = UIColor.black.cgColor
         idTF?.placeholder = "  id"
         idTF?.layer.borderWidth = 1
@@ -53,6 +54,7 @@ class MemberView: UIView {
         passTF = UITextField(frame: tlbSize)
         passTF?.frame.origin.x = viewWidth*0.25
         passTF?.frame.origin.y = viewheight*0.3
+        passTF?.backgroundColor = .white
         passTF?.layer.borderColor = UIColor.black.cgColor
         passTF?.placeholder = "  password"
         passTF?.isSecureTextEntry = true
@@ -94,17 +96,14 @@ class MemberView: UIView {
         
         if let users = UserDefaults.standard.dictionary(forKey: key)
         {
-            print("1pass")
             for user in users
             {
-                print("2pass")
                 if user.key == id
                 {
-                    print("3pass")
                     if String(describing: user.value) == pass
                     {
                         delegate?.confirmAction(sender)
-                        print("통과")
+                        return
                     }
                 }
             }

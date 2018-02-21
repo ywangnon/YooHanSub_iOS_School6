@@ -13,8 +13,9 @@ let key = "UserID"
 class MemberController: UIViewController, MemberViewDelegate {
     
     func signAction(_ sender: UIButton) {
+        print("눌렀다")
         let signup: SignupController = SignupController()
-        self.present(signup, animated: true, completion: nil)
+        self.navigationController?.pushViewController(signup, animated: true)
     }
     
     func confirmAction(_ sender: UIButton) {
@@ -23,10 +24,14 @@ class MemberController: UIViewController, MemberViewDelegate {
     }
     
     override func viewDidLoad() {
+        self.navigationItem.title = "회원 로그인"
         super.viewDidLoad()
         
+        let loginBG: UIImageView = UIImageView(frame: view.bounds)
+        loginBG.image = UIImage(named: "BlackjackLogin")
+        view.addSubview(loginBG)
+        
         let loginView: MemberView = MemberView(frame: view.bounds)
-        loginView.backgroundColor = UIColor.yellow
         loginView.delegate = self
         view.addSubview(loginView)
     }

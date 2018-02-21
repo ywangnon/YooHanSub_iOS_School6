@@ -59,7 +59,9 @@ class ViewController: UIViewController {
         
 //        ====================================================
         //화면을 넘기는 방법2
+        //- 특정 스토리보드를 지정해준다.
         //- 스토리보드의 컨트롤러의 아이디를 지정하여 그 뷰로 이동시킨다.
+        
 //        let storyboard = UIStoryboard(name: "Main", bundle: nil)
 //
 //        let nextVC2: NextViewController = storyboard.instantiateViewController(withIdentifier: "NextViewController") as! NextViewController

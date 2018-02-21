@@ -25,14 +25,12 @@ class BlackjackController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let blackjackBG: UIImageView = UIImageView(frame: view.bounds)
+        blackjackBG.image = UIImage(named: "BlackjackBoard")
+        view.addSubview(blackjackBG)
+        
         makeCardList()
-
-        print("=====pull=======")
-        for card in cardList
-        {
-            print(card.tag)
-        }
-        print("=====pull=======")
+        
         shuffledCard = GKMersenneTwisterRandomSource.sharedRandom().arrayByShufflingObjects(in: cardList)
         
         comSum += (shuffledCard[count] as AnyObject).tag
@@ -45,21 +43,33 @@ class BlackjackController: UIViewController {
         userSum += (shuffledCard[count] as AnyObject).tag
         userView.append(drawCard())
         
-        if comSum < 17
+        while comSum < 17
         {
             comSum += cardList[count].tag
             comView.append(drawCard())
         }
         
-        for a in comView
+        var comNum:CGFloat = 0
+        for card in comView
         {
-            print(a.tag)
+            let cardSize: CGRect = CGRect(x: view.bounds.size.width/5*comNum, y: 0, width: view.bounds.size.width/5, height: view.bounds.size.height/2)
+            card.frame = cardSize
+            view.addSubview(card)
+            comNum += 1
         }
-        print("==================")
-        for b in userView
+        
+        var userNum: CGFloat = 0
+        for card in userView
         {
-            print(b.tag)
+            let cardSize: CGRect = CGRect(x: view.bounds.size.width/5*userNum, y: view.bounds.size.height/2, width: view.bounds.size.width/5, height: view.bounds.size.height/2)
+            card.frame = cardSize
+            view.addSubview(card)
+            userNum += 1
         }
+    }
+    
+    func makeBlackjackUI() {
+        
     }
     
     func makeCardList() {
@@ -71,13 +81,14 @@ class BlackjackController: UIViewController {
                 let cardView: UIImageView = UIImageView()
                 if let card:UIImage = UIImage(named: num+"_of_"+logo)
                 {
-                    cardView.image = card
-                    cardView.tag = tagNum
-                    cardList.append(cardView)
-                    tagNum += 1
-                    print("img"+String(tagNum))
+                    if tagNum > 10 {
+                        tagNum = 10
+                    }
+                        cardView.image = card
+                        cardView.tag = tagNum
+                        cardList.append(cardView)
+                        tagNum += 1
                 }
-                print("card"+String(tagNum))
             }
         }
     }
@@ -128,15 +139,6 @@ class BlackjackController: UIViewController {
     }
     
     @IBAction func StandAction(_ sender: Any) {
-        for a in comView
-        {
-            print(a.tag)
-        }
-        print("==================")
-        for b in userView
-        {
-            print(b.tag)
-        }
         self.stand()
     }
     
