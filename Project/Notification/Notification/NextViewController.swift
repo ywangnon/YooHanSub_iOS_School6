@@ -11,14 +11,9 @@ import UIKit
 class NextViewController: UIViewController {
 
     @IBOutlet weak var tf: UITextField!
-    @IBOutlet weak var tf2: UITextField!
     
     @IBAction func btn(_ sender: Any) {
-        NotificationCenter.default.post(name: Notification.Name(rawValue: "notiKey"), object: self)
-        
-        NotificationCenter.default.post(name: Notification.Name(rawValue: "notiKey"), object: self)
-        
-
+        NotificationCenter.default.post(name: Notification.Name(rawValue: "notiKey"), object: tf.text)
     }
     
     

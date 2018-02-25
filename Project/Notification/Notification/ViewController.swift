@@ -15,17 +15,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        NotificationCenter.default.addObserver(forName: Notification.Name(rawValue: "notiKey"), object: nil, queue: nil) { (noti) in
-//            let msg = noti.object as! String
-//            self.lb.text = msg
-//            print("noti Action")
-//        }
+        NotificationCenter.default.addObserver(forName: Notification.Name(rawValue: "notiKey"), object: nil, queue: nil) { (noti) in
+            let msg = noti.object as! String
+            self.lb.text = msg
+            print("noti Action")
+        }
         
         let ad: NextViewController = NextViewController()
         
         
         
-        NotificationCenter.default.addObserver(self, selector: #selector(notiAction(_:)), name: Notification.Name(rawValue: "notiKey"), object: ad)
+//        NotificationCenter.default.addObserver(self, selector: #selector(notiAction(_:)), name: Notification.Name(rawValue: "notiKey"), object: nil)
     }
 
     @objc func notiAction(_ noti: Notification)
