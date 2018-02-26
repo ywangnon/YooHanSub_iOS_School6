@@ -10,13 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var list: [[String:Any]] = []
 
-    
+    var model: UserDataModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
+        var modelList: [UserDataModel] = []
+        
+        for dic in list
+        {
+            if let data = UserDataModel(dic: dic)
+            {
+                modelList.append(data)
+            }
+        }
+        
         
     }
     

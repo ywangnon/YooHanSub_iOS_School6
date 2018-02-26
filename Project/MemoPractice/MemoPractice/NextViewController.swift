@@ -10,21 +10,29 @@ import UIKit
 
 class NextViewController: UIViewController {
     
-    @IBOutlet var NextViewTextField: UITextField?
+    @IBOutlet var NextViewTextView: UITextView?
+    
+    /// 버튼 눌렀을시 행동
+    ///
+    /// - Parameter sender: UI버튼
     @IBAction  func NextViewBtnAction(_ sender: UIButton) {
         print("nextBtn")
-        NotificationCenter.default.post(name: Notification.Name(rawValue: key), object: NextViewTextField?.text)
-        self.navigationController?.popViewController(animated: true)
+        //notification에 정보를 담아 보내줌
+        NotificationCenter.default.post(name: Notification.Name(rawValue: key), object: NextViewTextView?.text)
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func cancelAction(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        NextViewTextView?.becomeFirstResponder()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 }

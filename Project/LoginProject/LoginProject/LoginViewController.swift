@@ -153,4 +153,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
+    
+//    func isLogin(<#parameters#>) -> <#return type#> {
+//        if UserDataCenter.main.isLogin!
+//        {
+//            
+//        }
+//    }
 }

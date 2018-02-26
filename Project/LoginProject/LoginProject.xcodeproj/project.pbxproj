@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0107FD972043AB230007A331 /* UserDataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0107FD962043AB230007A331 /* UserDataCenter.swift */; };
+		0107FD992043CBBB0007A331 /* UserDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0107FD982043CBBB0007A331 /* UserDataModel.swift */; };
+		0107FD9B2043D5AB0007A331 /* ModelPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0107FD9A2043D5AB0007A331 /* ModelPractice.swift */; };
 		01F745E9203BB44800FC5A1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F745E8203BB44800FC5A1D /* AppDelegate.swift */; };
 		01F745EB203BB44800FC5A1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F745EA203BB44800FC5A1D /* ViewController.swift */; };
 		01F745EE203BB44800FC5A1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01F745EC203BB44800FC5A1D /* Main.storyboard */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0107FD962043AB230007A331 /* UserDataCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataCenter.swift; sourceTree = "<group>"; };
+		0107FD982043CBBB0007A331 /* UserDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataModel.swift; sourceTree = "<group>"; };
+		0107FD9A2043D5AB0007A331 /* ModelPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPractice.swift; sourceTree = "<group>"; };
 		01F745E5203BB44800FC5A1D /* LoginProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01F745E8203BB44800FC5A1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01F745EA203BB44800FC5A1D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +68,9 @@
 				01F745EA203BB44800FC5A1D /* ViewController.swift */,
 				01F745FA203BB4EC00FC5A1D /* LoginViewController.swift */,
 				01F745FC203BC2D400FC5A1D /* SignupController.swift */,
+				0107FD962043AB230007A331 /* UserDataCenter.swift */,
+				0107FD982043CBBB0007A331 /* UserDataModel.swift */,
+				0107FD9A2043D5AB0007A331 /* ModelPractice.swift */,
 				01F745EC203BB44800FC5A1D /* Main.storyboard */,
 				01F745EF203BB44800FC5A1D /* Assets.xcassets */,
 				01F745F1203BB44800FC5A1D /* LaunchScreen.storyboard */,
@@ -142,9 +151,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0107FD992043CBBB0007A331 /* UserDataModel.swift in Sources */,
 				01F745FB203BB4EC00FC5A1D /* LoginViewController.swift in Sources */,
+				0107FD972043AB230007A331 /* UserDataCenter.swift in Sources */,
 				01F745EB203BB44800FC5A1D /* ViewController.swift in Sources */,
 				01F745E9203BB44800FC5A1D /* AppDelegate.swift in Sources */,
+				0107FD9B2043D5AB0007A331 /* ModelPractice.swift in Sources */,
 				01F745FD203BC2D400FC5A1D /* SignupController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

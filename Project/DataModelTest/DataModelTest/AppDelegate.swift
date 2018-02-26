@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  NotificationHomework
+//  DataModelTest
 //
-//  Created by Hansub Yoo on 2018. 2. 23..
+//  Created by Hansub Yoo on 2018. 2. 26..
 //  Copyright © 2018년 hansub yoo. All rights reserved.
 //
 

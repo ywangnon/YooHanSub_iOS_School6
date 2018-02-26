@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0107FD9420439B940007A331 /* ModificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0107FD9320439B940007A331 /* ModificationView.swift */; };
 		019B5AE9204142CD00E2FD18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019B5AE8204142CD00E2FD18 /* AppDelegate.swift */; };
 		019B5AEB204142CD00E2FD18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019B5AEA204142CD00E2FD18 /* ViewController.swift */; };
 		019B5AEE204142CD00E2FD18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 019B5AEC204142CD00E2FD18 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0107FD9320439B940007A331 /* ModificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModificationView.swift; sourceTree = "<group>"; };
 		019B5AE5204142CD00E2FD18 /* MemoPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		019B5AE8204142CD00E2FD18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		019B5AEA204142CD00E2FD18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				019B5AE8204142CD00E2FD18 /* AppDelegate.swift */,
 				019B5AEA204142CD00E2FD18 /* ViewController.swift */,
 				019B5AFA20429B2B00E2FD18 /* NextViewController.swift */,
+				0107FD9320439B940007A331 /* ModificationView.swift */,
 				019B5AEC204142CD00E2FD18 /* Main.storyboard */,
 				019B5AEF204142CD00E2FD18 /* Assets.xcassets */,
 				019B5AF1204142CD00E2FD18 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 			files = (
 				019B5AEB204142CD00E2FD18 /* ViewController.swift in Sources */,
 				019B5AFB20429B2B00E2FD18 /* NextViewController.swift in Sources */,
+				0107FD9420439B940007A331 /* ModificationView.swift in Sources */,
 				019B5AE9204142CD00E2FD18 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
