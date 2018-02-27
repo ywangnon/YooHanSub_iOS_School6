@@ -33,7 +33,7 @@ struct UserDataModel {
         guard let id = dic["userID"] as? String else { return nil }
         guard let pw = dic["userPW"] as? String else { return nil }
         guard let email = dic["email"] as? String else { return nil }
-
+        
         self.userID = id
         self.userPW = pw
         self.email = email

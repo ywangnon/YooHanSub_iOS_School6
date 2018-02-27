@@ -23,6 +23,7 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
         print("notiAction")
         
         let msg = noti.object as! String
+        
         strArr = UserDefaults.standard.array(forKey: key) as? [String] ?? []
         
         if strArr.count == 0

@@ -13,6 +13,7 @@
 		0107FDB02043DAE80007A331 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0107FDAF2043DAE80007A331 /* Assets.xcassets */; };
 		0107FDB32043DAE80007A331 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0107FDB12043DAE80007A331 /* LaunchScreen.storyboard */; };
 		0107FDBB2043DB260007A331 /* album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0107FDBA2043DB260007A331 /* album.swift */; };
+		010885D32044D76500413CC8 /* SongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010885D22044D76500413CC8 /* SongCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0107FDB22043DAE80007A331 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0107FDB42043DAE80007A331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0107FDBA2043DB260007A331 /* album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = album.swift; sourceTree = "<group>"; };
+		010885D22044D76500413CC8 /* SongCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				0107FDA82043DAE80007A331 /* AppDelegate.swift */,
 				0107FDAA2043DAE80007A331 /* ViewController.swift */,
+				010885D22044D76500413CC8 /* SongCell.swift */,
 				0107FDBA2043DB260007A331 /* album.swift */,
 				0107FDAC2043DAE80007A331 /* Main.storyboard */,
 				0107FDAF2043DAE80007A331 /* Assets.xcassets */,
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				010885D32044D76500413CC8 /* SongCell.swift in Sources */,
 				0107FDBB2043DB260007A331 /* album.swift in Sources */,
 				0107FDAB2043DAE80007A331 /* ViewController.swift in Sources */,
 				0107FDA92043DAE80007A331 /* AppDelegate.swift in Sources */,
