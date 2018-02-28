@@ -18,15 +18,15 @@ class ViewController: UIViewController {
         
         
         
-        MyUserDefaults().object(forKey: "Name")
-        print("===========================")
-        MyUserDefaults().set(["Han":"kangsu"], forKey: "NameA")
-        MyUserDefaults().set(["Sub":"st"], forKey: "NameB")
-        MyUserDefaults().set("Kang", forKey: "NameC")
-        MyUserDefaults().set("Hong", forKey: "NameD")
-        print("===========================")
-        MyUserDefaults().removeObject(forKey: "NameD")
-        print("===========================")
+//        MyUserDefaults().object(forKey: "Name")
+//        print("===========================")
+//        MyUserDefaults().set(["Han":"kangsu"], forKey: "NameA")
+//        MyUserDefaults().set(["Sub":"st"], forKey: "NameB")
+//        MyUserDefaults().set("Kang", forKey: "NameC")
+//        MyUserDefaults().set("Hong", forKey: "NameD")
+//        print("===========================")
+//        MyUserDefaults().removeObject(forKey: "NameD")
+//        print("===========================")
         
     }
     

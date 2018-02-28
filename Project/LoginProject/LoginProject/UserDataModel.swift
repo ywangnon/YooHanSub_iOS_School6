@@ -46,9 +46,9 @@ struct UserDataModel {
         
         if let list = dic["friendsList"] as? [[String:Any]]
         {
-            for dic in list
+            for dict in list
             {
-                
+                friendsList?.append(UserDataModel(dic: dict)!)
             }
         }
     }

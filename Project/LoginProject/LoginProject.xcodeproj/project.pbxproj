@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0107FD972043AB230007A331 /* UserDataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0107FD962043AB230007A331 /* UserDataCenter.swift */; };
 		0107FD992043CBBB0007A331 /* UserDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0107FD982043CBBB0007A331 /* UserDataModel.swift */; };
+		0108B736204650BD001801CB /* FreindInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0108B735204650BD001801CB /* FreindInfo.plist */; };
 		01F745E9203BB44800FC5A1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F745E8203BB44800FC5A1D /* AppDelegate.swift */; };
 		01F745EB203BB44800FC5A1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F745EA203BB44800FC5A1D /* ViewController.swift */; };
 		01F745EE203BB44800FC5A1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01F745EC203BB44800FC5A1D /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		0107FD962043AB230007A331 /* UserDataCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataCenter.swift; sourceTree = "<group>"; };
 		0107FD982043CBBB0007A331 /* UserDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataModel.swift; sourceTree = "<group>"; };
+		0108B735204650BD001801CB /* FreindInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FreindInfo.plist; sourceTree = "<group>"; };
 		01F745E5203BB44800FC5A1D /* LoginProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01F745E8203BB44800FC5A1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01F745EA203BB44800FC5A1D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				01F745EC203BB44800FC5A1D /* Main.storyboard */,
 				01F745EF203BB44800FC5A1D /* Assets.xcassets */,
 				01F745F1203BB44800FC5A1D /* LaunchScreen.storyboard */,
+				0108B735204650BD001801CB /* FreindInfo.plist */,
 				01F745F4203BB44800FC5A1D /* Info.plist */,
 			);
 			path = LoginProject;
@@ -137,6 +140,7 @@
 			files = (
 				01F745F3203BB44800FC5A1D /* LaunchScreen.storyboard in Resources */,
 				01F745F0203BB44800FC5A1D /* Assets.xcassets in Resources */,
+				0108B736204650BD001801CB /* FreindInfo.plist in Resources */,
 				01F745EE203BB44800FC5A1D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

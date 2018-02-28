@@ -71,7 +71,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         self.navigationItem.title = "로그인"
         
-        
     }
     
     //2.UI frame잡기
