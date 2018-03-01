@@ -17,8 +17,11 @@
 		0108B75B20465A19001801CB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0108B75A20465A19001801CB /* DetailViewController.swift */; };
 		0108B75D20467071001801CB /* MainData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0108B75C20467071001801CB /* MainData.swift */; };
 		0108B75F20468D18001801CB /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0108B75E20468D17001801CB /* Settings.plist */; };
-		0108B76120468E62001801CB /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0108B76020468E62001801CB /* SettingCell.swift */; };
+		0108B76120468E62001801CB /* SettingDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0108B76020468E62001801CB /* SettingDetailCell.swift */; };
 		0108B76420468EDC001801CB /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0108B76320468EDC001801CB /* SettingViewController.swift */; };
+		0108B766204695A0001801CB /* SettingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0108B765204695A0001801CB /* SettingData.swift */; };
+		0109FDAE204806BD0046B068 /* SettingBasicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0109FDAD204806BD0046B068 /* SettingBasicCell.swift */; };
+		0109FDB0204806D10046B068 /* SettingSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0109FDAF204806D10046B068 /* SettingSwitchCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +37,11 @@
 		0108B75A20465A19001801CB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		0108B75C20467071001801CB /* MainData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainData.swift; sourceTree = "<group>"; };
 		0108B75E20468D17001801CB /* Settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
-		0108B76020468E62001801CB /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
+		0108B76020468E62001801CB /* SettingDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingDetailCell.swift; sourceTree = "<group>"; };
 		0108B76320468EDC001801CB /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		0108B765204695A0001801CB /* SettingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingData.swift; sourceTree = "<group>"; };
+		0109FDAD204806BD0046B068 /* SettingBasicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingBasicCell.swift; sourceTree = "<group>"; };
+		0109FDAF204806D10046B068 /* SettingSwitchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingSwitchCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,7 @@
 			children = (
 				0108B743204652DA001801CB /* AppDelegate.swift */,
 				0108B75C20467071001801CB /* MainData.swift */,
+				0108B765204695A0001801CB /* SettingData.swift */,
 				0108B757204653E0001801CB /* Main */,
 				0108B76220468EA8001801CB /* Setting */,
 				0108B74A204652DA001801CB /* Assets.xcassets */,
@@ -95,7 +102,9 @@
 		0108B76220468EA8001801CB /* Setting */ = {
 			isa = PBXGroup;
 			children = (
-				0108B76020468E62001801CB /* SettingCell.swift */,
+				0108B76020468E62001801CB /* SettingDetailCell.swift */,
+				0109FDAD204806BD0046B068 /* SettingBasicCell.swift */,
+				0109FDAF204806D10046B068 /* SettingSwitchCell.swift */,
 				0108B76320468EDC001801CB /* SettingViewController.swift */,
 			);
 			path = Setting;
@@ -177,8 +186,11 @@
 			files = (
 				0108B75D20467071001801CB /* MainData.swift in Sources */,
 				0108B746204652DA001801CB /* ViewController.swift in Sources */,
-				0108B76120468E62001801CB /* SettingCell.swift in Sources */,
+				0109FDB0204806D10046B068 /* SettingSwitchCell.swift in Sources */,
+				0108B76120468E62001801CB /* SettingDetailCell.swift in Sources */,
 				0108B744204652DA001801CB /* AppDelegate.swift in Sources */,
+				0108B766204695A0001801CB /* SettingData.swift in Sources */,
+				0109FDAE204806BD0046B068 /* SettingBasicCell.swift in Sources */,
 				0108B75920465578001801CB /* MainCell.swift in Sources */,
 				0108B76420468EDC001801CB /* SettingViewController.swift in Sources */,
 				0108B75B20465A19001801CB /* DetailViewController.swift in Sources */,

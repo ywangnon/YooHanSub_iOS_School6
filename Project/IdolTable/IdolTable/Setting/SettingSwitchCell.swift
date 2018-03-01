@@ -1,18 +1,23 @@
 //
-//  SettingCell.swift
+//  SettingSwitchCell.swift
 //  IdolTable
 //
-//  Created by Hansub Yoo on 2018. 2. 28..
+//  Created by Hansub Yoo on 2018. 3. 1..
 //  Copyright © 2018년 hansub yoo. All rights reserved.
 //
 
 import UIKit
 
-class SettingCell: UITableViewCell {
-
+class SettingSwitchCell: UITableViewCell {
+    @IBOutlet weak var titleLb: UILabel!
+    @IBOutlet weak var cellSW: UISwitch!
+    
+    var title: String = ""
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        titleLb.text = title
         
     }
 
