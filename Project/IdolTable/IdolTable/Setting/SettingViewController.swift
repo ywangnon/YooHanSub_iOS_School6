@@ -24,35 +24,55 @@ class SettingViewController: UIViewController,UITableViewDataSource,UITableViewD
         
         var dataDic = SettingDataCenter.standard.settingList![indexPath.section]["Data"] as! [[String:String]]
         
-        if indexPath.section == 0
+//        let title = SettingDataCenter.standard.settingList![indexPath.section]
+        
+        let cellStyle = dataDic[indexPath.row]["CellStyle"] as! String
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellStyle, for: indexPath)
+        cell.textLabel?.text = dataDic[indexPath.row]["Content"]
+        
+        if cellStyle == "SettingBasicCell"
         {
-            if indexPath.row < 2
+            let basicCell = cell as! SettingBasicCell
+            if SettingDataCenter.standard.settingList![indexPath.section]["SectionTitle"] as! String == "계정"
             {
-                let cell = tableView.dequeueReusableCell(withIdentifier: "SettingDetailCell", for: indexPath) as! SettingDetailCell
-                cell.titleLb.text = dataDic[indexPath.row]["Content"]
-                return cell
-            }else
+                basicCell.textLabel?.textColor = UIColor.red
+            }else if SettingDataCenter.standard.settingList![indexPath.section]["SectionTitle"] as! String == "정보"
             {
-                let cell = tableView.dequeueReusableCell(withIdentifier: "SettingBasicCell", for: indexPath) as! SettingBasicCell
-                cell.titleLb?.text = dataDic[indexPath.row]["Content"]
-                cell.titleLb?.textColor = UIColor.red
-                return cell
+                basicCell.InfoLb.text = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as! String
             }
-        }else if indexPath.section == 1
-        {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "SettingBasicCell", for: indexPath) as! SettingBasicCell
-            cell.titleLb?.text = dataDic[indexPath.row]["Content"]
-            cell.InfoLb.text = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as! String
-            return cell
-        }else if indexPath.section == 2
-        {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "SettingSwitchCell", for: indexPath) as! SettingSwitchCell
-            cell.titleLb?.text = dataDic[indexPath.row]["Content"]
-            return cell
         }
         
-        let cell = UITableViewCell()
         return cell
+//        if indexPath.section == 0
+//        {
+//            if indexPath.row < 2
+//            {
+//                let cell = tableView.dequeueReusableCell(withIdentifier: "SettingDetailCell", for: indexPath) as! SettingDetailCell
+//                cell.titleLb.text = dataDic[indexPath.row]["Content"]
+//                return cell
+//            }else
+//            {
+//                let cell = tableView.dequeueReusableCell(withIdentifier: "SettingBasicCell", for: indexPath) as! SettingBasicCell
+//                cell.titleLb?.text = dataDic[indexPath.row]["Content"]
+//                cell.titleLb?.textColor = UIColor.red
+//                return cell
+//            }
+//        }else if indexPath.section == 1
+//        {
+//            let cell = tableView.dequeueReusableCell(withIdentifier: "SettingBasicCell", for: indexPath) as! SettingBasicCell
+//            cell.titleLb?.text = dataDic[indexPath.row]["Content"]
+//            cell.InfoLb.text = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as! String
+//            return cell
+//        }else if indexPath.section == 2
+//        {
+//            let cell = tableView.dequeueReusableCell(withIdentifier: "SettingSwitchCell", for: indexPath) as! SettingSwitchCell
+//            cell.titleLb?.text = dataDic[indexPath.row]["Content"]
+//            return cell
+//        }
+//        
+//        let cell = UITableViewCell()
+//        return cell
     }
     
     //섹션 갯수
@@ -74,6 +94,10 @@ class SettingViewController: UIViewController,UITableViewDataSource,UITableViewD
         return title as? String
     }
     
+    //row 높이
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 50
+    }
     
     
     override func viewDidLoad() {
