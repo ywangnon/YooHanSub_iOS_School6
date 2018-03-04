@@ -4,7 +4,9 @@
 
 ## States in the App Life Cycle
 
-앱은 아이콘을 탭한 순간부터 앱이 종료되는 순간까지 앱 라이프 사이클에서 각 순간마다 별개의 상태에 있다.                             
+앱은 아이콘을 탭한 순간부터 앱이 종료되는 순간까지 앱 라이프 사이클에서 각 순간마다 별개의 상태에 있다. 
+
+![AppLifeCycle](./img/StateinTheAppLifeCycle.png "AppLifeCycle")
 
 ## The Structure of an App
 
