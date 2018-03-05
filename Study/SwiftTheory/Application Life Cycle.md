@@ -8,6 +8,22 @@
 
 ![AppLifeCycle](./img/StateinTheAppLifeCycle.png "AppLifeCycle")
 
+- Not running
+	
+	아직 앱이 실행되지 않은 단계, 또는 유저나 시스템에 의해 종료된 상태
+	
+- Inactive
+
+	앱이 foreground에 있지만, OS로부터 이벤트를 받지 않음. 잠깐 비활성화되어 다른 상태로 바뀝니다.
+
+- Active
+
+	앱이 실행 중이고 운영 체제에서 이벤트를 수신하는 상태. 앱을 사용하는 동안의 일반적인 상태
+
+- Background
+
+- Suspended
+
 ## The Structure of an App
 
 - application을 시작하는 동안 UIAdplicationmain 기능은 몇개의 주요 개체를 설정하고 application 활동을 시작합니다.
