@@ -12,12 +12,16 @@ class CalendarController: UIViewController, UICollectionViewDelegateFlowLayout, 
     
     var cal = Calendar.current
     var date = Date()
+    var month: Int = 0
+    var year: Int = 0
     
     var weekName: [String] = ["일","월","화","수","목","금","토"]
     
     @IBOutlet var collectionView: UICollectionView!
     @IBOutlet var nMonth: UILabel!
     @IBOutlet var calTitle: UILabel!
+    
+    
     @IBAction func preMonth(_ sender: Any) {
     }
     
@@ -33,7 +37,7 @@ class CalendarController: UIViewController, UICollectionViewDelegateFlowLayout, 
             return weekName.count
         }else if section == 1
         {
-            return 31
+            return 31 + self.setStartDay()
         }
         
         return 31
@@ -59,8 +63,14 @@ class CalendarController: UIViewController, UICollectionViewDelegateFlowLayout, 
             //전 달의 마지막주 수
             //해당 달의 일 수
             
-            cell.cellTitle.text = "\(indexPath.row+1)"
-            
+            if indexPath.row < setStartDay()
+            {
+                cell.cellTitle.text = ""
+                cell.backgroundColor = .white
+            }else
+            {
+                cell.cellTitle.text = "\(indexPath.row-self.setStartDay()+1)"
+            }
         }
         
         return cell
@@ -70,9 +80,12 @@ class CalendarController: UIViewController, UICollectionViewDelegateFlowLayout, 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        year = cal.component(.year, from: date)
         
-        self.calTitle.text = "\(cal.component(.year, from: date)) 년"
-        self.nMonth.text = "\(cal.component(.month, from: date)) 월"
+        month = cal.component(.month, from: date)
+        
+        self.calTitle.text = "\(year) 년"
+        self.nMonth.text = "\(month) 월"
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -86,7 +99,6 @@ class CalendarController: UIViewController, UICollectionViewDelegateFlowLayout, 
             let size: CGSize = CGSize(width: collectionView.bounds.width/8, height: 40)
             return size
         }
-        
     }
     
     
@@ -98,14 +110,20 @@ class CalendarController: UIViewController, UICollectionViewDelegateFlowLayout, 
         return 1
     }
 
+    //섹션간 간격
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 1, left: 0, bottom: 0, right: 0)
+    }
     
-    
+    func setStartDay() -> Int{
+//        var startDay = DateComponents(calendar: cal, year: year, month: month, day: 1)
+        let week = cal.component(.weekday, from: cal.date(from: DateComponents(year: year, month: month, day: 1))!)
+        
+        return week-1
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        
     }
     
-    
-
 }
