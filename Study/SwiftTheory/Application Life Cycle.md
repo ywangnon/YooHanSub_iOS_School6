@@ -22,10 +22,53 @@
 
 - Background
 
+	앱이 백그라운드에 있지만 실행되고 있는 상태. 일반적으로 앱은 잠시 Inactive 상태가 되었다가, 다른 상태로 전환됨.
+
 - Suspended
 
-## The Structure of an App
+	앱이 백그라운드에 있으며 실행되지 않는 상태. 앱을 Suspended 하는 이벤트에는, 사용자가 앱을 사용하는 동안 홈 버튼을 누르거나 전화 통화를받는 사용자가 포함됨.
 
-- application을 시작하는 동안 UIAdplicationmain 기능은 몇개의 주요 개체를 설정하고 application 활동을 시작합니다.
--  모든 iOS앱의 중심에는 UIApplication개체가 있습니다.
+## Handling App Transitions
+
+응용 프로그램은 상태 전환이 일어날 때 시스템에 알리고, 필요한 경우 이러한 전환을 다루는 것이 프로그래머 역할입니다. 예를 들어 백그라운드로 전환하여 장치의 영구 저장소에 데이터를 저장하고 서비스 실행을 중지하며 현재 어떤 화면이 활성 상태인지 추적 할 수 있습니다. 마찬가지로 활성 상태로 전환하여 데이터를 로드하고 서비스를 시작하며 마지막으로 열었던 화면을 복원 할 수 있습니다.
+
+시스템은 현재 상태에 따라 앱에서 다음 기능 중 하나를 호출합니다.
+
+- application:willFinishLaunchingWithOptions:
+
+앱이 시작할 때 코드를 실행할 첫번째 기회
+
+- application:didFinishLaunchingWithOptions:
+
+앱이 사용자에게 표시되기 전에 최종 초기화를 수행
+
+-applicationDidBecomeActive:
+
+앱이 곧 foreground 상태가 됩니다. 이곳에서 마지막으로 준비합니다.
+
+- applicationWillResignActive:
+
+앱이 foreground 상태에서 다른 상태로 전환됩니다. 이곳은 자료를 저장하기에 이상적인 장소입니다
+
+- applicationDidEnterBackground:
+
+현재 앱이 background에서 실행되고 있지만 여전히 코드를 실행할 수 있습니다.
+
+- applicationWillEnterForeground:
+
+앱이 background에서 벗어나 foreground로 돌아 왔지만 아직 활성화되지 않았 음을 알 수 있습니다.
+
+- applicationWillTerminate:
+
+앱이 종료되고 있음을 알려줍니다. 앱이 이미 일시 중지 된 경우 이 메소드가 호출되지 않으므로 이 상태에 도달하기 전에 데이터를 저장하십시오.
+
+> 이러한 기능 중 하나 이상에 코드를 제공하여 이러한 시스템 호출에 응답 할 수 있습니다. 프로젝트의 AppDelegate.swift 파일에서이 작업을 수행합니다.
+
+## A Practical Understanding of the App Life Cycle
+
+single view app을 만들고, App Life Cycle을 부르자.
+
+
+## Counting the Events during the App Life Cycle
+
 
