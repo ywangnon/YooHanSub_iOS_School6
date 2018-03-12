@@ -66,9 +66,63 @@
 
 ## A Practical Understanding of the App Life Cycle
 
-single view app을 만들고, App Life Cycle을 부르자.
+single view app을 만들고, App Life Cycle을 불러봅시다. project를 만들고, **AppDelegate.swift**를 열어보세요. 그러면 이미 만들어진 5개의 빈 function을 볼 수 있습니다. 여기에 각각 어떤 일을 하는지 print문을 적으세요.
 
+```
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        print("Did finish launching.")
+        return true
+    }
+ 
+    func applicationWillResignActive(_ application: UIApplication) {
+        print("App will resign active.")
+    }
+ 
+    func applicationDidEnterBackground(_ application: UIApplication) {
+        print("App did enter background.")
+    }
+ 
+    func applicationWillEnterForeground(_ application: UIApplication) {
+        print("App will enter foreground.")
+    }
+ 
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        print("App did become active.")
+    }
+ 
+    func applicationWillTerminate(_ application: UIApplication) {
+        print("App will terminate.")
+    }
+```
+1. 앱 실행
+ - 실행 완료됐습니다.
+ - active가 됐습니다.
+2. 홈 버튼 누르기
+ - 앱이 active를 그만 둘 겁니다.
+ - background에 들어갔습니다.
+3. 앱 아이콘 눌러서 다시 열기
+ - foreground에 들어갈겁니다.
+ - active가 됐습니다.
+4. 홈버튼을 2번 눌러 App Switcher 열기
+ - 앱이 active를 그만 둘 겁니다.
+5. App Switcher(홈 버튼 2번)에서 앱의 카드를 밀기.
+ - background에 들어갔습니다.
+ - 앱이 종료될 겁니다.
+
+
+> 라이프 사이클이 언제 실행되는지 실습하는 것
 
 ## Counting the Events during the App Life Cycle
 
+> 라이프 사이클의 사용을 넓혀보는 것
 
+## Which Method Should You Use?
+
+많은 수의 전환에 응답 할 수 있지만 가장 많이 사용할 세 가지 방법은
+
+applicationDidFinishLaunchingWithOptions
+applicationWillResignActive
+applicationDidBecomeActive.
+이 세 가지 기능을 통해 앱 시작, 종료 및 재 개설시기를 알 수 있습니다.
+
+잘 했어! 이제 iOS App Life Cycle을 마스터했습니다. 등을 가볍게 두드리며 ...이 튜토리얼을 즐긴다면 언제든지 공유하십시오 :

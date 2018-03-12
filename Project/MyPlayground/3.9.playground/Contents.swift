@@ -82,7 +82,6 @@ print("===============")
 print(sum(immutableArray))
 print("===============")
 print(sum(even(returnIndex(immutableArray))))
- */
 
 
 let array = ["1j", "2d", "22", "33"]
@@ -99,4 +98,7 @@ print(f1)
 print("===============")
 print(m2)
 print("===============")
-print(f2)
+ print(f2)
+*/
+
+

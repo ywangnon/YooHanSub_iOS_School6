@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  접근제어Test
+//  ClosureTest
 //
-//  Created by Hansub Yoo on 2018. 1. 26..
+//  Created by Hansub Yoo on 2018. 3. 11..
 //  Copyright © 2018년 hansub yoo. All rights reserved.
 //
 
@@ -10,24 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var ansLB: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        var proExc: Property.Rect = Property.Rect()
-//        proExc.center = Property.Point(x: 3, y: 4)
-        
-//        print(proExc)
-        
-//        ansLB.text = String(proExc.center.x)
-        
+        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-}
 
+
+}
 
