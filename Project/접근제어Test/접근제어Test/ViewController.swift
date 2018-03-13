@@ -15,6 +15,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let bundle = Bundle.main.bundlePath
+        
+        ansLB.text = bundle
+        print("=====================[bundle Path]=====================")
+        print(bundle)
+        print("=====================[Home Directory]=====================")
+        print(NSHomeDirectory())
 //        var proExc: Property.Rect = Property.Rect()
 //        proExc.center = Property.Point(x: 3, y: 4)
         

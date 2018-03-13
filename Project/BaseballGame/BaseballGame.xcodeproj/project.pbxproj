@@ -96,6 +96,7 @@
 				TargetAttributes = {
 					50700F851F7354A6001E0858 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = XP44KJ6JB3;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -260,7 +261,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XP44KJ6JB3;
 				INFOPLIST_FILE = BaseballGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wingstudio.develop.BaseballGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,7 +275,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XP44KJ6JB3;
 				INFOPLIST_FILE = BaseballGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wingstudio.develop.BaseballGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -299,6 +304,7 @@
 				50700F9A1F7354A6001E0858 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
