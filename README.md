@@ -29,6 +29,8 @@
 - [UI명령어]
 - [delegate]
 
+### [Etc]
+
 ## 2. 프로젝트
 - [야구 게임](./Project/BaseballGame)
 - [계산기](./Project/CalculatorSwift)
