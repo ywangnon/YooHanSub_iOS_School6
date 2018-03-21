@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     var leftBtnlocation: CGRect!
     var rightBtnlocation: CGRect!
     
+    
+    
     @IBOutlet weak var view1: UIView!
     let leftBtn0: UIButton = UIButton()
     let leftView1: UIView = UIView()
@@ -32,19 +34,26 @@ class ViewController: UIViewController {
         })
     }
     
+    @IBOutlet weak var testImgView: UIImageView!
+    
     @IBAction func rightBtn0(_ sender: Any) {
         
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        leftBtnlocation = CGRect(x: 116, y: 566, width: 68, height: 68)
-        leftView1.frame = leftBtnlocation
-        leftView1.backgroundColor = UIColor.black
-        leftView2.frame = leftBtnlocation
-        leftView2.backgroundColor = UIColor.black
-        view.addSubview(leftView1)
-        view.addSubview(leftView2)
+        
+        
+        
+//        leftBtnlocation = CGRect(x: 116, y: 566, width: 68, height: 68)
+//        leftView1.frame = leftBtnlocation
+//        leftView1.backgroundColor = UIColor.black
+//        leftView2.frame = leftBtnlocation
+//        leftView2.backgroundColor = UIColor.black
+//        view.addSubview(leftView1)
+//        view.addSubview(leftView2)
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
