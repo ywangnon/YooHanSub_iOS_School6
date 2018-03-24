@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hwang.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="w0O-NU-oYf">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twice.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="w0O-NU-oYf">
                                 <rect key="frame" x="30" y="120" width="315" height="347"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HSt-KR-GBo">
@@ -46,6 +46,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="hwang.jpg" width="280" height="400"/>
+        <image name="twice.jpeg" width="650" height="433"/>
     </resources>
 </document>
