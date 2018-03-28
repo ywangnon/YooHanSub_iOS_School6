@@ -66,8 +66,6 @@ class AddPost: UIViewController {
                     print("\n---------- [ fail ] ----------\n")
                 }
         }
-        
-        Alamofire.upload(multipartFormData: <#T##(MultipartFormData) -> Void#>, with: <#T##URLRequestConvertible#>, encodingCompletion: <#T##((SessionManager.MultipartFormDataEncodingResult) -> Void)?##((SessionManager.MultipartFormDataEncodingResult) -> Void)?##(SessionManager.MultipartFormDataEncodingResult) -> Void#>)
     }
     
     override func viewDidLoad() {
