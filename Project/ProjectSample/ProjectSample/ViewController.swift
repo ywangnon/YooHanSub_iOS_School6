@@ -34,7 +34,6 @@ class ViewController: UIViewController {
             .responseData { (response) in
                 switch response.result {
                 case .success(let value):
-                
                     do {
                         let userInfo = try JSONDecoder().decode(user.self, from: value)
                         print(userInfo.token)
