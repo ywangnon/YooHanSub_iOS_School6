@@ -40,8 +40,8 @@ class MainViewController: UIViewController {
             
             guard let properties = user.properties else { return }
             print("\n---------- [ properties ] ----------\n")
-            guard let nickName = properties[KOUserNicknamePropertyKey] as? String else { return }
             
+            guard let nickName = properties[KOUserNicknamePropertyKey] as? String else { return }
             self?.nickNameLabel.text = nickName
             print("\n---------- [ nickName ] ----------\n")
             print(nickName)
