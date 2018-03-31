@@ -51,6 +51,10 @@ class AddPost: UIViewController {
         guard let headToken = token else {return}
         let header = ["Authorization": "Token \(headToken)"]
         
+        let urlRequest = try? URLRequest(url: URL(string:"https://api.lhy.kr/posts/")!, method: .post, headers: header)
+        
+        let image = UIImage(named: "https://www.google.co.kr/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwj8yYa-3JbaAhXBipQKHS0yD_cQjRx6BAgAEAU&url=http%3A%2F%2Fwww.isawesome.co.kr%2Fnews%2F2850&psig=AOvVaw3WE8O9tGtXM8TRPNRcwM2T&ust=1522591226224104")
+        
         Alamofire.request("https://api.lhy.kr/posts/", method: .post, parameters: params, headers: header)
             .validate()
             .responseData { (response) in
@@ -67,11 +71,28 @@ class AddPost: UIViewController {
                 }
         }
         
-//        Alamofire.upload(multipartFormData: { (multiPartFormData) in
-//            <#code#>
-//        }, with: <#T##URLRequestConvertible#>) { (<#SessionManager.MultipartFormDataEncodingResult#>) in
-//            <#code#>
-//        }
+        Alamofire.upload(multipartFormData: { (multiPartFormData) in
+            if let _image = image {
+                if let imageData = UIImageJPEGRepresentation(_image, 0.5) {
+                    multiPartFormData.append(imageData, withName: "file", fileName: "file.png", mimeType: "image/png")
+                }
+            }
+        }, with: urlRequest!) { (encodingResult) in
+            switch encodingResult {
+                
+            case .success(let request, let streamingFromDisk, let streamFileURL):
+                request.responseData(completionHandler: { (response) in
+                    switch response.result {
+                    case .success(_):
+                        print("\n---------- [ image success ] ----------\n")
+                    case .failure(_):
+                        print("\n---------- [ image fail ] ----------\n")
+                    }
+                })
+            case .failure(let error):
+                print("\n---------- [ image fail 2R ] ----------\n")
+            }
+        }
     }
     
     override func viewDidLoad() {
