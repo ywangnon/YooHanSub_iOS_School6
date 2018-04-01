@@ -53,7 +53,7 @@ class AddPost: UIViewController {
         
         let urlRequest = try? URLRequest(url: URL(string:"https://api.lhy.kr/posts/")!, method: .post, headers: header)
         
-        let image = UIImage(named: "https://www.google.co.kr/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwj8yYa-3JbaAhXBipQKHS0yD_cQjRx6BAgAEAU&url=http%3A%2F%2Fwww.isawesome.co.kr%2Fnews%2F2850&psig=AOvVaw3WE8O9tGtXM8TRPNRcwM2T&ust=1522591226224104")
+        let image = UIImage(named: )
         
         Alamofire.request("https://api.lhy.kr/posts/", method: .post, parameters: params, headers: header)
             .validate()
