@@ -89,6 +89,22 @@
             </objects>
             <point key="canvasLocation" x="1262" y="32"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="daj-ZI-QCc">
+            <objects>
+                <viewController id="JJb-BV-JTS" sceneMemberID="viewController">
+                    <label key="view" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FaceBook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rT9-r4-SsU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XS0-Da-QCA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1148" y="817"/>
+        </scene>
         <!--Item-->
         <scene sceneID="YVg-9V-Q3O">
             <objects>
@@ -121,7 +137,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PU8-BI-sFI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1676" y="31.934032983508249"/>
+            <point key="canvasLocation" x="1978" y="-358"/>
         </scene>
     </scenes>
     <resources>
