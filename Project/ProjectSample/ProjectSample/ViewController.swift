@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var idTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var testLabel: UILabel!
     
     var token: String?
     
@@ -64,7 +65,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        testLabel.num
         
         //        Alamofire.requst("https://google.com")
         //        .validate() // 자료 온거 체크

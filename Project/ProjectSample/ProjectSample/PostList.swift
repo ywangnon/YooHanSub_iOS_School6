@@ -43,7 +43,6 @@ class PostList: UIViewController {
                         let bookInfo = try! JSONDecoder().decode([postlist].self, from: value)
                         print(bookInfo)
                         print("Completely Success")
-                        
                     } catch {
                         print(error.localizedDescription)
                     }

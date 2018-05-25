@@ -53,7 +53,7 @@ class AddPost: UIViewController {
         
         let urlRequest = try? URLRequest(url: URL(string:"https://api.lhy.kr/posts/")!, method: .post, headers: header)
         
-        let image = UIImage(named: )
+        
         
         Alamofire.request("https://api.lhy.kr/posts/", method: .post, parameters: params, headers: header)
             .validate()
@@ -72,11 +72,7 @@ class AddPost: UIViewController {
         }
         
         Alamofire.upload(multipartFormData: { (multiPartFormData) in
-            if let _image = image {
-                if let imageData = UIImageJPEGRepresentation(_image, 0.5) {
-                    multiPartFormData.append(imageData, withName: "file", fileName: "file.png", mimeType: "image/png")
-                }
-            }
+
         }, with: urlRequest!) { (encodingResult) in
             switch encodingResult {
                 
