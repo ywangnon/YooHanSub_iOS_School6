@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='rendered' executeOnSourceChanges='false'>
+    <pages>
+        <page name='Contents'/>
+        <page name='Basic Codable'/>
+        <page name='Nested Codable'/>
+        <page name='Nested Keys'/>
+        <page name='Codable Extension'/>
+        <page name='Handle download data'/>
+    </pages>
+</playground>
