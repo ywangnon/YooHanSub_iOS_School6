@@ -1,0 +1,41 @@
+[ 기술 면접 진행 사항 ]
+FizzBuzz  
+1) 1부터 100까지의 정수를 입력받아 3의 배수면 Fizz, 5의 배수면 Buzz, 
+   3과 5의 공배수면 FizzBuzz 를 출력하고 그 이외에는 숫자를 그대로 출력하는 함수를 구현
+   func fizzBuzz(num: Int) -> String { }
+2) if 면 switch, switch 면 if 문으로 바꿔서 구현해보기
+3) for 문 대신 1부터 100 까지의 숫자를 map 을 이용해서 FizzBuzz 함수에 넘기는 방법
+4) FizzBuzz 함수를 Closure 로 변환
+
+
+[ 질문 예시 ]
+- 1급 객체(퍼스트 클래스 시티즌) 이란?
+- 고차 함수의 종류와 그 쓰임새, 왜 쓰는지
+- 저장 프로퍼티와 연산 프로퍼티의 차이점
+- 클로져에 쓰이는 Escaping 과 NoEscaping 에 대해서 설명해보세요.
+- 옵셔널 체이닝과 옵셔널 바인딩이란?
+- ARC 에 대해서 설명해보세요.
+- weak, unowned 차이점과 사용해야 하는 상황
+- Access Control (접근 제어) 에 대해서 설명해보세요.
+- MVC 에 대해서 아는 만큼 얘기해보세요.
+- 어플리케이션 라이프 사이클과 그에 대한 설명
+- Serial 과 Concurrent, Sync 와 Async 의 차이점
+- GCD 란 무엇이고 어떤 식으로 사용하는지
+- Sandbox 란 무엇이고 왜 사용하는지
+- Intrinsic Content Size 에 대해서 설명
+- Autolayout 을 사용할 때와 Frame 기반으로 작업할 때의 장단점
+- Any 와 AnyObject 의 차이점
+- struct 와 class 의 차이점
+- OOP (Object Oriented Programming) 의 4대 특징 / 5가지 원칙
+- POP (Protocol Oriented Programming) 에 대해서 설명
+- inout 키워드는 언제 쓰이는가
+- mutating 키워드는 언제 쓰이는가
+- ViewController 의 presentedViewController 와 presentingViewController
+- Unit Test 가 무엇이고 어떤 식으로 테스트하는지
+- Codable 이란?
+- Delegate 패턴에 대해서 설명
+- 사용해본 오픈소스 라이브러리는? 그 라이브러리를 쓴 이유와 장단점은? 
+- 디자인 패턴에 대해 아는 것이 있다면?
+- 개발자로서 본인의 장단점은? 현재의 강점은?
+- 현재 부족한 부분을 앞으로 어떻게 채워 나갈건지
+- 앞으로 목표는?
