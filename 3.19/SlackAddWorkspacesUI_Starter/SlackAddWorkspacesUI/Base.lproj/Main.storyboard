@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="G2D-ck-MZa">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="sSb-tT-1BO">
+            <objects>
+                <viewController id="G2D-ck-MZa" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c5F-rD-KvQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CHa-j2-0AZ">
+                                <rect key="frame" x="131" y="318" width="112" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sign in manually"/>
+                                <connections>
+                                    <segue destination="v6n-j0-lSM" kind="presentation" id="JBx-0b-csN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="jcI-xP-HuQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wyd-O3-889" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-542" y="0.0"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SlackAddWorkspacesUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8yv-jR-hIx">
+                                <rect key="frame" x="313" y="20" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="oob-yY-C5U" kind="show" identifier="NextViewControllerModalSegue" id="EKH-N7-ETS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIJ-PM-iph">
+                                <rect key="frame" x="16" y="20" width="78" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="btnClose"/>
+                                <connections>
+                                    <action selector="dismissButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wHl-dd-7QR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F25-ux-EaH">
+                                <rect key="frame" x="36" y="617" width="229" height="30"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Don't know your workspace URL?">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="15"/>
+                                                <integer key="NSUnderline" value="1"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="your-url.slack.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rBV-Df-OcW">
+                                <rect key="frame" x="16" y="362.5" width="162" height="24"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fBe-dk-g0x">
+                                <rect key="frame" x="16" y="312.5" width="343" height="24"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Naa-GB-90n"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Your Slack workspace URL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpe-1l-GsM">
+                                <rect key="frame" x="16" y="284.5" width="343" height="18"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rBV-Df-OcW" firstAttribute="centerY" secondItem="fBe-dk-g0x" secondAttribute="centerY" constant="50" placeholder="YES" id="5CY-aU-E7s"/>
+                            <constraint firstItem="fBe-dk-g0x" firstAttribute="leading" secondItem="tpe-1l-GsM" secondAttribute="leading" id="9ks-uw-sOM"/>
+                            <constraint firstItem="F25-ux-EaH" firstAttribute="top" relation="greaterThanOrEqual" secondItem="tpe-1l-GsM" secondAttribute="bottom" priority="250" constant="120" id="DdV-Cv-2Hj"/>
+                            <constraint firstItem="tpe-1l-GsM" firstAttribute="leading" secondItem="Ol1-fc-fUk" secondAttribute="leading" constant="16" id="E7f-pU-rGb"/>
+                            <constraint firstItem="Ol1-fc-fUk" firstAttribute="bottom" secondItem="F25-ux-EaH" secondAttribute="bottom" constant="20" id="GXb-6G-b8Y"/>
+                            <constraint firstItem="Ol1-fc-fUk" firstAttribute="trailing" secondItem="tpe-1l-GsM" secondAttribute="trailing" constant="16" id="IKh-Ix-IJM"/>
+                            <constraint firstItem="rBV-Df-OcW" firstAttribute="centerY" secondItem="fBe-dk-g0x" secondAttribute="centerY" priority="999" id="Nxo-4n-oIl"/>
+                            <constraint firstItem="rBV-Df-OcW" firstAttribute="leading" secondItem="fBe-dk-g0x" secondAttribute="leading" id="SyN-K4-esQ"/>
+                            <constraint firstItem="fBe-dk-g0x" firstAttribute="trailing" secondItem="tpe-1l-GsM" secondAttribute="trailing" id="eP9-vV-PyF"/>
+                            <constraint firstItem="F25-ux-EaH" firstAttribute="leading" secondItem="Ol1-fc-fUk" secondAttribute="leading" constant="36" id="hGG-2W-e6F"/>
+                            <constraint firstItem="tpe-1l-GsM" firstAttribute="centerY" secondItem="Ol1-fc-fUk" secondAttribute="centerY" constant="-50" id="kz6-nd-Y7U"/>
+                            <constraint firstItem="fBe-dk-g0x" firstAttribute="top" secondItem="tpe-1l-GsM" secondAttribute="bottom" constant="10" id="ohE-zw-ijs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ol1-fc-fUk"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="neZ-rl-wzh"/>
+                    <connections>
+                        <outlet property="dismissButton" destination="IIJ-PM-iph" id="Ngp-JI-Lma"/>
+                        <outlet property="dontKnowURLLabelBottomConstraint" destination="GXb-6G-b8Y" id="waf-Il-033"/>
+                        <outlet property="nextButton" destination="8yv-jR-hIx" id="eC2-m7-op5"/>
+                        <outlet property="placeholderLabel" destination="rBV-Df-OcW" id="og4-2R-7Gm"/>
+                        <outlet property="placeholderLabelLeadingConstraint" destination="SyN-K4-esQ" id="vPQ-mz-UYz"/>
+                        <outlet property="urlTextField" destination="fBe-dk-g0x" id="gME-88-isB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="912.79999999999995" y="-0.44977511244377816"/>
+        </scene>
+        <!--Next View Controller-->
+        <scene sceneID="ELs-pq-Lma">
+            <objects>
+                <viewController id="oob-yY-C5U" customClass="NextViewController" customModule="SlackAddWorkspacesUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rgU-Ni-kVZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCx-eR-bIQ">
+                                <rect key="frame" x="16" y="23" width="78" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="btnLeftArrow"/>
+                                <connections>
+                                    <segue destination="Ufv-bN-gAf" kind="unwind" unwindAction="unwind:" id="ywV-nj-EJp"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GFS-pQ-1uc">
+                                <rect key="frame" x="16" y="268.5" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                <connections>
+                                    <outlet property="delegate" destination="oob-yY-C5U" id="Z0d-FT-JIB"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your email address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDP-S9-wMj">
+                                <rect key="frame" x="16" y="244.5" width="130" height="18"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GFS-pQ-1uc" firstAttribute="centerY" secondItem="Y1p-6u-Nff" secondAttribute="centerY" constant="-60" id="Asp-TV-NmE"/>
+                            <constraint firstItem="Y1p-6u-Nff" firstAttribute="trailing" secondItem="GFS-pQ-1uc" secondAttribute="trailing" constant="16" id="BGn-Oh-b7S"/>
+                            <constraint firstItem="VDP-S9-wMj" firstAttribute="centerY" secondItem="GFS-pQ-1uc" secondAttribute="centerY" priority="998" id="Pvo-6h-1Yq"/>
+                            <constraint firstItem="GFS-pQ-1uc" firstAttribute="leading" secondItem="Y1p-6u-Nff" secondAttribute="leading" constant="16" id="VaB-iG-bdb"/>
+                            <constraint firstItem="VDP-S9-wMj" firstAttribute="centerY" secondItem="GFS-pQ-1uc" secondAttribute="centerY" priority="999" constant="-30" id="svN-MD-Ti4"/>
+                            <constraint firstItem="VDP-S9-wMj" firstAttribute="leading" secondItem="GFS-pQ-1uc" secondAttribute="leading" id="v6U-pW-I4v"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Y1p-6u-Nff"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailAddressTextField" destination="GFS-pQ-1uc" id="7uW-lu-bgj"/>
+                        <outlet property="guidanceLabel" destination="VDP-S9-wMj" id="R37-e1-3la"/>
+                        <outlet property="guidanceLabelBottomConstraint" destination="Pvo-6h-1Yq" id="X8A-4D-3T6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fDI-qp-vqX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Ufv-bN-gAf" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1632.8" y="-0.44977511244377816"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="y0L-7r-i9s">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="v6n-j0-lSM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BN1-wz-CuS">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="LeU-00-h8t"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZQr-YN-NxL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="188.80000000000001" y="-0.89955022488755632"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btnClose" width="24" height="24"/>
+        <image name="btnLeftArrow" width="24" height="24"/>
+    </resources>
+</document>

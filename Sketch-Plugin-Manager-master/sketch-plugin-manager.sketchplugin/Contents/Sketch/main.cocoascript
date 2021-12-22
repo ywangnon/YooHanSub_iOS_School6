@@ -1,0 +1,58 @@
+@import 'main.js'
+
+let kHelperAppName = "Sketch Plugin Manager"
+let kAppBundleID = "com.melludowise.Sketch-Plugin-Manager"
+let kDefaultsSuite = "com.melludowise.Sketch-Plugin-Manager"
+let kDefaultsDontShowOnStartup = "com.melludowise.Sketch-Plugin-Manager.dont-show-on-startup"
+let kDefaultsPreviouslyOpened = "com.melludowise.Sketch-Plugin-Manager.previously-opened"
+
+function showManager(context) {
+    logInfo("show manager")
+    debug(function() {
+        run(context, kHelperAppName, null)
+    })
+    logInfo("end show manager")
+}
+
+function checkForUpdates(context) {
+    logInfo("check for updates")
+    debug(function() {
+        let args = [
+            "-check-for-updates", "true",
+            "-always-alert", "true"
+        ]
+        run(context, kHelperAppName, args)
+    })
+    logInfo("end check for updates")
+}
+
+function startup(context) {
+    logInfo("startup")
+    debug(function() {
+
+        // Have to check both suite and standard defaults when migrating from v1.3 to v1.4
+        let standardDefaults = NSUserDefaults.standardUserDefaults() // < v1.4
+        let suiteDefaults = NSUserDefaults.alloc().initWithSuiteName(kDefaultsSuite) // >= v1.4
+
+        // Migrate setting for first time user
+        if (standardDefaults.boolForKey(kDefaultsPreviouslyOpened)) {
+            suiteDefaults.setBool_forKey(true, kDefaultsPreviouslyOpened)
+        }
+
+        // Check if user checked box to not check for updates on startup
+        let dontShowOnStartup = standardDefaults.boolForKey(kDefaultsDontShowOnStartup) || suiteDefaults.boolForKey(kDefaultsDontShowOnStartup)
+        if (dontShowOnStartup) {
+            // Migrate setting for checking updates on startup
+            suiteDefaults.setBool_forKey(true, kDefaultsDontShowOnStartup)
+            return
+        }
+
+        let args = [
+            "-check-for-updates", "true",
+            "-always-alert", "false"
+        ]
+
+        run(context, kHelperAppName, args)
+    })
+    logInfo("end startup")
+}
