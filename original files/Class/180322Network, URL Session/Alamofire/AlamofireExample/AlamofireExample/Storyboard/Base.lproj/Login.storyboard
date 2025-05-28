@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="AlamofireExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JKo-0V-LO0" userLabel="SignInView">
+                                <rect key="frame" x="16" y="108.5" width="343" height="150"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pe8-vs-5Vo">
+                                        <rect key="frame" x="16" y="65" width="311" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Ap-rD-Pt9">
+                                        <rect key="frame" x="16" y="20" width="311" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wef-pe-Abp">
+                                        <rect key="frame" x="151.5" y="110" width="39" height="30"/>
+                                        <state key="normal" title="로그인"/>
+                                        <connections>
+                                            <action selector="signInButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Egs-tf-w0R"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="pe8-vs-5Vo" firstAttribute="left" secondItem="JKo-0V-LO0" secondAttribute="left" constant="16" id="2ie-e8-jfv"/>
+                                    <constraint firstItem="Wef-pe-Abp" firstAttribute="centerX" secondItem="pe8-vs-5Vo" secondAttribute="centerX" id="7Li-Zj-Pu9"/>
+                                    <constraint firstAttribute="trailing" secondItem="2Ap-rD-Pt9" secondAttribute="trailing" constant="16" id="BUj-pC-zgJ"/>
+                                    <constraint firstItem="pe8-vs-5Vo" firstAttribute="top" secondItem="2Ap-rD-Pt9" secondAttribute="bottom" constant="15" id="FA5-iJ-pt3"/>
+                                    <constraint firstItem="2Ap-rD-Pt9" firstAttribute="leading" secondItem="JKo-0V-LO0" secondAttribute="leading" constant="16" id="kJP-35-MAJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="pe8-vs-5Vo" secondAttribute="trailing" constant="16" id="n9Q-Hs-fTS"/>
+                                    <constraint firstAttribute="height" constant="150" id="rxO-6m-X59"/>
+                                    <constraint firstItem="2Ap-rD-Pt9" firstAttribute="top" secondItem="JKo-0V-LO0" secondAttribute="top" constant="20" id="ueC-mk-mg9"/>
+                                    <constraint firstItem="Wef-pe-Abp" firstAttribute="top" secondItem="pe8-vs-5Vo" secondAttribute="bottom" constant="15" id="wAh-yc-Fp4"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NR2-yv-GBZ" userLabel="SignUpView">
+                                <rect key="frame" x="16" y="358.5" width="343" height="150"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NbP-Db-Opc">
+                                        <rect key="frame" x="16" y="19.5" width="311" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VeV-l8-X1p">
+                                        <rect key="frame" x="16" y="65" width="311" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBq-qz-ymE">
+                                        <rect key="frame" x="145" y="110" width="52" height="30"/>
+                                        <state key="normal" title="회원가입"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="NbP-Db-Opc" firstAttribute="top" secondItem="NR2-yv-GBZ" secondAttribute="top" constant="20" id="1kt-md-QzE"/>
+                                    <constraint firstAttribute="trailing" secondItem="NbP-Db-Opc" secondAttribute="trailing" constant="16" id="6Qz-Y0-D07"/>
+                                    <constraint firstAttribute="height" constant="150" id="ERi-Xx-46B"/>
+                                    <constraint firstItem="fBq-qz-ymE" firstAttribute="centerX" secondItem="VeV-l8-X1p" secondAttribute="centerX" id="Juy-77-Zmg"/>
+                                    <constraint firstItem="VeV-l8-X1p" firstAttribute="leading" secondItem="NR2-yv-GBZ" secondAttribute="leading" constant="16" id="VW3-Og-Tei"/>
+                                    <constraint firstItem="VeV-l8-X1p" firstAttribute="top" secondItem="NbP-Db-Opc" secondAttribute="bottom" constant="15" id="fAY-dl-zmg"/>
+                                    <constraint firstAttribute="right" secondItem="VeV-l8-X1p" secondAttribute="right" constant="16" id="fRn-w6-4hs"/>
+                                    <constraint firstItem="fBq-qz-ymE" firstAttribute="top" secondItem="VeV-l8-X1p" secondAttribute="bottom" constant="15" id="h8g-bc-tSV"/>
+                                    <constraint firstItem="NbP-Db-Opc" firstAttribute="leading" secondItem="NR2-yv-GBZ" secondAttribute="leading" constant="16" id="x5z-Ww-0NW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="NR2-yv-GBZ" secondAttribute="trailing" constant="16" id="6QC-0m-YgU"/>
+                            <constraint firstItem="NR2-yv-GBZ" firstAttribute="top" secondItem="JKo-0V-LO0" secondAttribute="bottom" constant="100" id="8G3-Q7-6Pb"/>
+                            <constraint firstItem="JKo-0V-LO0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-150" id="SJD-hm-yg7"/>
+                            <constraint firstItem="JKo-0V-LO0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UEG-Te-gBt"/>
+                            <constraint firstItem="NR2-yv-GBZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="eBe-Dj-y2a"/>
+                            <constraint firstAttribute="trailing" secondItem="JKo-0V-LO0" secondAttribute="trailing" constant="16" id="jiZ-Dp-IPG"/>
+                            <constraint firstItem="JKo-0V-LO0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="rbe-u4-h1b"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="5up-EF-GAf"/>
+                    <connections>
+                        <outlet property="passwordTextField" destination="pe8-vs-5Vo" id="mqr-AE-G3A"/>
+                        <outlet property="usernameTextField" destination="2Ap-rD-Pt9" id="Jrt-tH-e0b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="770" y="-45"/>
+        </scene>
+    </scenes>
+</document>
